@@ -1,0 +1,10 @@
+*~
+*.aux
+*.bbl
+*.blg
+*.class
+*.cmo
+*.cmx
+*.cmi
+*.dvi
+*.log
