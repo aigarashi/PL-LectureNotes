@@ -51,7 +51,7 @@ public class Branch implements BinarySearchTree {
      */
     public BinarySearchTree insert(int n) {
         if (n == v) {
-            return this ;
+            return this;
         } else if (n < v) {
             BinarySearchTree newLeft = left.insert(n);
             return new Branch(newLeft, v, right);
