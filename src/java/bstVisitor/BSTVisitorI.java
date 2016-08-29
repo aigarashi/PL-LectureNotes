@@ -1,9 +1,8 @@
-
 /**
  * Write a description of interface BSTVisitorB here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Atsushi Igarashi
+ * @version 20160824
  */
 public interface BSTVisitorI
 {

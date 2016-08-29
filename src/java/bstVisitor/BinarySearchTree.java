@@ -1,4 +1,3 @@
-
 /**
  * Write a description of interface BinarySearchTree here.
  * 

@@ -1,9 +1,8 @@
-
 /**
  * Write a description of class IsLeaf here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Atsushi Igarashi
+ * @version 20160824
  */
 public class IsLeaf implements BSTVisitorB
 {
