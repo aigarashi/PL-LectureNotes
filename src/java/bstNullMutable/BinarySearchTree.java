@@ -27,7 +27,7 @@ public class BinarySearchTree {
      * @param  n    the number to be searched for
      * @return      whether n is found in the BST
      */
-    boolean find(int n) {
+    public boolean find(int n) {
 	if (n == v) {
 	    return true;
 	} else if (n < v) {
@@ -77,7 +77,7 @@ public class BinarySearchTree {
      * 
      * @return      a minimum number in the BST
      */
-    int min() {
+    public int min() {
 	if (left!=null) {
 	    return left.min();
 	} else {
@@ -91,7 +91,7 @@ public class BinarySearchTree {
      * @param  n    the number to be deleted
      * @return      a new BST without n (or the same tree, if n is not in the BST)
      */
-    BinarySearchTree delete(int n) {
+    public BinarySearchTree delete(int n) {
 	if (n == v) {
 	    if (left==null) {
 		if (right==null) {
