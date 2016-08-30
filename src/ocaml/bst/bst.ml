@@ -16,7 +16,7 @@ let rec find t n =
   | Br {left=l; value=v; right=r} ->
      if n = v then true
      else if n < v then find l n
-     else find r n
+     else (* n > v *) find r n
 
 (* (Recursive) function insert, which, given BST t and a new element n, returns 
    a new binary search tree with n *)
@@ -26,7 +26,7 @@ let rec insert t n =
   | Br {left=l; value=v; right=r} ->
      if n = v then t
      else if n < v then Br {left=insert l n; value=v; right=r}
-     else Br {left=l; value=v; right=insert r n}
+     else (* n > v *) Br {left=l; value=v; right=insert r n}
 
 (* Function min, which, given BST t, returns the minimum value stored in t.
    If t is empty, it returns -255. *)
@@ -53,7 +53,7 @@ let rec delete t n =
 	  let m = min r in
 	  Br {left=l; value=m; right=delete r m}
      else if n < v then Br {left=delete l n; value=v; right=r}
-     else Br {left=l; value=v; right=delete r n}
+     else (* n > v *) Br {left=l; value=v; right=delete r n}
 
 (* Constructing a sample tree *)
 let t1 = Br {left = Lf; value = 10; right = Lf}
