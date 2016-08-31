@@ -54,7 +54,7 @@ struct tree *newleaf() {
   return n;
 }
 
-int find(struct tree *t, int n) {
+bool find(struct tree *t, int n) {
   if (t->tag == LEAF) {
     return false;   // another enum value
   } else /* t->tag == BRANCH */ {
