@@ -83,6 +83,7 @@ struct tree *delete(struct tree *t, int n) {
     if (n == t->value) {
       if (t->left == NULL) {
 	if (t->right == NULL) {
+	  free(t);
 	  return newleaf();
 	} else /* t->right is a branch */ {
 	  return t->right;
