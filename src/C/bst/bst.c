@@ -36,8 +36,10 @@ struct tree {
 */
 
 struct tree *newbranch(struct tree *_left, int _value, struct tree *_right) {
+  // Allocate a new object in the heap
   struct tree *n = (struct tree *)malloc(sizeof(struct tree));
 
+  // And then initialize the members
   n->tag = BRANCH;            // could be written (*n).tag = BRANCH
   n->dat.br.left = _left;
   n->dat.br.value = _value;
@@ -56,7 +58,7 @@ struct tree *newleaf() {
 
 bool find(struct tree *t, int n) {
   if (t->tag == LEAF) {
-    return false;   // another enum value
+    return false;
   } else /* t->tag == BRANCH */ {
     
     struct branch b = t->dat.br;

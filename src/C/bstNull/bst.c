@@ -16,8 +16,10 @@ struct tree {
 struct tree *newbranch(struct tree *_left,
 			 int _value,
 			 struct tree *_right) {
+  // Allocate a new object in the heap
   struct tree *n = (struct tree *)malloc(sizeof(struct tree));
 
+  // And then initialize the members
   n->left = _left;
   n->value = _value;
   n->right = _right;
@@ -26,14 +28,16 @@ struct tree *newbranch(struct tree *_left,
 }
 
 struct tree *newleaf() {
+  /* Real C programmers would avoid defining such a simple function.
+   * It causes overhead of function calls.
+   */
   return NULL;
 }
 
 bool find(struct tree *t, int n) {
   if (t == NULL) {
-    return false;   // another enum value
+    return false;
   } else /* t is a branch */ {
-    
     if (n == t->value) {
       return true;
     } else if (n < t->value) {
@@ -48,7 +52,6 @@ struct tree *insert(struct tree *t, int n) {
   if (t == NULL) {
     return newbranch(newleaf(), n, newleaf());
   } else /* t is a branch */ {
-
     if (n == t->value) {
       return t;
     } else if (n < t->value) {
@@ -63,7 +66,6 @@ int min(struct tree *t) {
   if (t == NULL) {
     return -255;
   } else /* t is a branch */ {
-
     if (t->left == NULL) {
       return t->value;
     } else {
@@ -76,7 +78,6 @@ struct tree *delete(struct tree *t, int n) {
   if (t == NULL) {
     return t;
   } else /* t is a branch */ {
-
     if (n == t->value) {
       if (t->left == NULL) {
 	if (t->right == NULL) {
