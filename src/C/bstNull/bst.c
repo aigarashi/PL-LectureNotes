@@ -6,6 +6,7 @@
 #include <stdio.h>   // for printf
 #include <stdlib.h>  // for malloc
 #include <stdbool.h> // for type bool, true, and false
+#include <limits.h>  // for INT_MIN
 
 struct tree {
   struct tree *left;
@@ -62,7 +63,7 @@ struct tree *insert(struct tree *t, int n) {
 
 int min(struct tree *t) {
   if (t == NULL) {
-    return -255;
+    return INT_MIN;
   } else /* t is a branch */ {
     if (t->left == NULL) {
       return t->value;
