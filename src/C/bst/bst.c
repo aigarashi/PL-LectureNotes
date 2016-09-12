@@ -1,4 +1,4 @@
-/* Immutable binary search tree in C 
+/* Immutable binary search tree in C
  *  by Atsushi Igarashi
  *  on August 31, 2016
  */
@@ -60,7 +60,7 @@ bool find(struct tree *t, int n) {
   if (t->tag == LEAF) {
     return false;
   } else /* t->tag == BRANCH */ {
-    
+
     struct branch b = t->dat.br;
 
     if (n == b.value) {
@@ -70,7 +70,7 @@ bool find(struct tree *t, int n) {
     } else /* n > b.value */ {
       return find(b.right, n);
     }
-  }	
+  }
 }
 
 struct tree *insert(struct tree *t, int n) {
@@ -87,7 +87,7 @@ struct tree *insert(struct tree *t, int n) {
     } else /* n > b.value */ {
       return newbranch(b.right, b.value, insert(b.right, n));
     }
-  }	
+  }
 }
 
 int min(struct tree *t) {
@@ -145,21 +145,21 @@ int main() {
   struct tree *t4 = newbranch(newleaf(), 60, newleaf());
   struct tree *t5 = newbranch(newleaf(), 48, t4);
   struct tree *t6 = newbranch(t3, 30, t5);
-        
+
   bool test1 = find(t6, 30);  // should be true
   bool test2 = find(t6, 13);  // should be false
-        
+
   struct tree *t7 = insert(t6, 23);
   struct tree *t8 = insert(t6, 0);
-        
+
   bool test3 = find(t7,23);  // should be true
   bool test4 = find(t8, 30);  // should be true
   bool test5 = find(t8, 23);  // should be false
-        
+
   struct tree *t9 = delete(t8, 30);
   bool test6 = find(t9, 30);  // should be false
   bool test7 = find(t9,48);  // should be true
-        
+
   printf("test 1: %d\n", test1);
   printf("test 2: %d\n", test2);
   printf("test 3: %d\n", test3);

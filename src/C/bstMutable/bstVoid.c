@@ -1,4 +1,4 @@
-/* Mutable binary search tree in C 
+/* Mutable binary search tree in C
  *  by Atsushi Igarashi
  *  on August 31, 2016
  * where with a cell to store the root node.
@@ -39,7 +39,7 @@ struct tree {
 struct root {
   struct tree *t;
 };
-  
+
 struct tree *newbranch(struct tree *_left, int _value, struct tree *_right) {
   // Allocate a new object in the heap
   struct tree *n = (struct tree *)malloc(sizeof(struct tree));
@@ -65,7 +65,7 @@ bool find_aux(struct tree *t, int n) {
   if (t->tag == LEAF) {
     return false;
   } else /* t->tag == BRANCH */ {
-    
+
     struct branch b = t->dat.br;
 
     if (n == b.value) {
@@ -75,7 +75,7 @@ bool find_aux(struct tree *t, int n) {
     } else /* n > b.value */ {
       return find_aux(b.right, n);
     }
-  }	
+  }
 }
 
 struct tree *insert_aux(struct tree *t, int n) {
@@ -88,21 +88,21 @@ struct tree *insert_aux(struct tree *t, int n) {
     if (n == b.value) {
       return t;
     } else if (n < b.value) {
-      
+
       struct tree *newleft = insert_aux(b.left, n);
-      
+
       t->dat.br.left = newleft;
-      
+
       return t;
     } else /* n > b.value */ {
-      
+
       struct tree *newright = insert_aux(b.right, n);
-      
+
       t->dat.br.right = newright;
-      
+
       return t;
     }
-  }	
+  }
 }
 
 int min(struct tree *t) {
@@ -139,13 +139,13 @@ struct tree *delete_aux(struct tree *t, int n) {
 	if (b.right->tag == LEAF) {
 	  return b.left;
 	} else /* b.right->tag == BRANCH*/ {
-	  
+
 	  int m = min(b.right);
 	  struct tree *newRight = delete_aux(b.right, m);
-	  
+
 	  t->dat.br.value = m;
 	  t->dat.br.right = newRight;
-	  
+
 	  return t;
 	}
       }
@@ -154,9 +154,9 @@ struct tree *delete_aux(struct tree *t, int n) {
       struct tree *newLeft = delete_aux(b.left, n);
 
       t->dat.br.left = newLeft;
-      
+
       return t;
-      
+
     } else /* n > b.value */ {
 
       struct tree *newRight = delete_aux(b.right, n);
@@ -193,19 +193,19 @@ int main() {
 
   struct root *r = (struct root *)malloc(sizeof(struct root));
   r->t = t6;
-          
+
   bool test1 = find(r, 30);  // should be true
   bool test2 = find(r, 13);  // should be false
-        
+
   insert(r, 23);
-        
+
   bool test3 = find(r, 23);  // should be true
   bool test4 = find(r, 30);  // should be true
-        
+
   delete(r, 30);
   bool test5 = find(r, 30);  // should be false
   bool test6 = find(r, 48);  // should be true
-        
+
   printf("test 1: %d\n", test1);
   printf("test 2: %d\n", test2);
   printf("test 3: %d\n", test3);

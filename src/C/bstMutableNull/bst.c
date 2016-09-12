@@ -1,4 +1,4 @@
-/* Mutable binary search tree in C 
+/* Mutable binary search tree in C
  *  by Atsushi Igarashi
  *  on August 31, 2016
  * where leaves are represented by NULL
@@ -47,7 +47,7 @@ bool find(struct tree *t, int n) {
     } else /* n > t->value */ {
       return find(t->right, n);
     }
-  }	
+  }
 }
 
 struct tree *insert(struct tree *t, int n) {
@@ -63,7 +63,7 @@ struct tree *insert(struct tree *t, int n) {
       t->right = insert(t->right, n);
       return t;
     }
-  }	
+  }
 }
 
 int min(struct tree *t) {
@@ -117,19 +117,19 @@ int main() {
   struct tree *t4 = newbranch(newleaf(), 60, newleaf());
   struct tree *t5 = newbranch(newleaf(), 48, t4);
   struct tree *t6 = newbranch(t3, 30, t5);
-        
+
   bool test1 = find(t6, 30);  // should be true
   bool test2 = find(t6, 13);  // should be false
-        
+
   t6 = insert(t6, 23);
-        
+
   bool test3 = find(t6, 23);  // should be true
   bool test4 = find(t6, 30);  // should be true
-        
+
   t6 = delete(t6, 30);
   bool test5 = find(t6, 30);  // should be false
   bool test6 = find(t6, 48);  // should be true
-        
+
   printf("test 1: %d\n", test1);
   printf("test 2: %d\n", test2);
   printf("test 3: %d\n", test3);
