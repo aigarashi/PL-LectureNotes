@@ -7,7 +7,7 @@
 #include <stdio.h>   // for printf
 #include <stdlib.h>  // for malloc
 #include <stdbool.h> // for type bool, true, and false
-#include <limits.h>  // for INT_MIN
+#include <assert.h>  // for assert
 
 struct tree {
   enum nkind { LEAF, BRANCH } tag;
@@ -93,15 +93,12 @@ struct tree *insert_aux(struct tree *t, int n) {
 }
 
 int min(struct tree *t) {
-  if (t->tag == LEAF) {
-    return INT_MIN;
-  } else /* t->tag == BRANCH */ {
-    struct branch b = t->dat.br;
-    if (b.left->tag == LEAF) {
-      return b.value;
-    } else {
-      return min(b.left);
-    }
+  assert(t->tag == BRANCH);
+  struct branch b = t->dat.br;
+  if (b.left->tag == LEAF) {
+    return b.value;
+  } else {
+    return min(b.left);
   }
 }
 
