@@ -3,8 +3,8 @@ CFLAGS += -pedantic -std=c99
 
 SRCS := $(wildcard */*.c)
 OBJS := $(SRCS:%.c=%.out)
-TESTS := $(addprefix test_,$(OBJS))
-CLEANS := $(addprefix clean_,$(OBJS))
+TESTS := $(addprefix test/,$(OBJS))
+CLEANS := $(addprefix clean/,$(OBJS))
 
 all: $(OBJS)
 
@@ -13,12 +13,12 @@ all: $(OBJS)
 
 test: $(TESTS)
 
-$(TESTS): test_%:
+$(TESTS): test/%:
 	$*
 
 clean: $(CLEANS)
 
-$(CLEANS): clean_%:
+$(CLEANS): clean/%:
 	rm -f $*
 
 .PHONY: all test $(TESTS) $(CLEANS)
