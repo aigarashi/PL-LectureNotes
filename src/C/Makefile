@@ -19,6 +19,6 @@ $(TESTS): test_%:
 clean: $(CLEANS)
 
 $(CLEANS): clean_%:
-	rm $*
+	rm -f $*
 
 .PHONY: all test $(TESTS) $(CLEANS)
