@@ -20,12 +20,10 @@ struct tree *newbranch(struct tree *_left,
 			 struct tree *_right) {
   // Allocate a new object in the heap
   struct tree *n = (struct tree *)malloc(sizeof(struct tree));
-
   // And then initialize the members
   n->left = _left;
   n->value = _value;
   n->right = _right;
-
   return n;
 }
 
@@ -117,25 +115,19 @@ int main() {
   struct tree *t4 = newbranch(newleaf(), 60, newleaf());
   struct tree *t5 = newbranch(newleaf(), 48, t4);
   struct tree *t6 = newbranch(t3, 30, t5);
-
   bool test1 = find(t6, 30);  // should be true
   bool test2 = find(t6, 13);  // should be false
-
   t6 = insert(t6, 23);
-
   bool test3 = find(t6, 23);  // should be true
   bool test4 = find(t6, 30);  // should be true
-
   t6 = delete(t6, 30);
   bool test5 = find(t6, 30);  // should be false
   bool test6 = find(t6, 48);  // should be true
-
   printf("test 1: %d\n", test1);
   printf("test 2: %d\n", test2);
   printf("test 3: %d\n", test3);
   printf("test 4: %d\n", test4);
   printf("test 5: %d\n", test5);
   printf("test 6: %d\n", test6);
-
   return 0;
 }
