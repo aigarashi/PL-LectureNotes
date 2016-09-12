@@ -1,4 +1,4 @@
-/* Immutable binary search tree in C 
+/* Mutable binary search tree in C 
  *  by Atsushi Igarashi
  *  on August 31, 2016
  */

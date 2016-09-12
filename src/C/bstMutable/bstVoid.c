@@ -1,6 +1,7 @@
-/* Immutable binary search tree in C 
+/* Mutable binary search tree in C 
  *  by Atsushi Igarashi
  *  on August 31, 2016
+ * where with a cell to store the root node.
  */
 
 #include <stdio.h>   // for printf
