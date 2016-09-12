@@ -8,10 +8,10 @@ CLEANS := $(addprefix clean_,$(OBJS))
 
 all: $(OBJS)
 
-test: $(TESTS)
-
 %.out: %.c
 	$(CC) $(CFLAGS) $< -o $@
+
+test: $(TESTS)
 
 $(TESTS): test_%:
 	$*
