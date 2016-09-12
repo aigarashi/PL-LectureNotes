@@ -2,16 +2,16 @@ CC ?= gcc
 CFLAGS += -pedantic -std=c99
 
 SRCS := $(wildcard */*.c)
-OBJS := $(SRCS:%.c=%.out)
-TESTS := $(addprefix test/,$(OBJS))
-CLEANS := $(addprefix clean/,$(OBJS))
+TARGETS := $(SRCS:%.c=%.out)
+TESTS := $(addprefix test/,$(TARGETS))
+CLEANS := $(addprefix clean/,$(TARGETS))
 
-all: $(OBJS)
+all: $(TARGETS)
 
 %.out: %.c
 	$(CC) $(CFLAGS) $< -o $@
 
-test: $(OBJS) $(TESTS)
+test: $(TARGETS) $(TESTS)
 
 $(TESTS): test/%:
 	$*
