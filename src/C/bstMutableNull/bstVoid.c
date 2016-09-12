@@ -8,7 +8,7 @@
 #include <stdio.h>   // for printf
 #include <stdlib.h>  // for malloc
 #include <stdbool.h> // for type bool, true, and false
-#include <limits.h>  // for INT_MIN
+#include <assert.h>  // for assert
 
 struct tree {
   struct tree *left;
@@ -70,14 +70,12 @@ struct tree *insert_aux(struct tree *t, int n) {
 }
 
 int min(struct tree *t) {
-  if (t == NULL) {
-    return INT_MIN;
-  } else /* t is a branch */ {
-    if (t->left == NULL) {
-      return t->value;
-    } else {
-      return min(t->left);
-    }
+  assert(t);
+  /* t is a branch */
+  if (t->left == NULL) {
+    return t->value;
+  } else {
+    return min(t->left);
   }
 }
 
