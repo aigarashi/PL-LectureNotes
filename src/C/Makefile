@@ -11,7 +11,7 @@ all: $(OBJS)
 %.out: %.c
 	$(CC) $(CFLAGS) $< -o $@
 
-test: $(TESTS)
+test: $(OBJS) $(TESTS)
 
 $(TESTS): test/%:
 	$*
