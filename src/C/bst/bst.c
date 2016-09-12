@@ -47,7 +47,7 @@ struct tree *newbranch(struct tree *left, int value, struct tree *right) {
   return n;
 }
 
-struct tree *newleaf() {
+struct tree *newleaf(void) {
   struct tree *n = (struct tree *)malloc(sizeof(struct tree));
   n->tag = LEAF;
   return n;
@@ -127,7 +127,7 @@ struct tree *delete(struct tree *t, int n) {
   }
 }
 
-int main() {
+int main(void) {
   struct tree *t1 = newbranch(newleaf(), 10, newleaf());
   struct tree *t2 = newbranch(newleaf(), 25, newleaf());
   struct tree *t3 = newbranch(t1, 15, t2);

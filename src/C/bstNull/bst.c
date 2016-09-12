@@ -26,7 +26,7 @@ struct tree *newbranch(struct tree *left,
   return n;
 }
 
-struct tree *newleaf() {
+struct tree *newleaf(void) {
   /* Real C programmers would avoid defining such a simple function.
    * It causes overhead of function calls.
    */
@@ -103,7 +103,7 @@ struct tree *delete(struct tree *t, int n) {
   }
 }
 
-int main() {
+int main(void) {
   struct tree *t1 = newbranch(newleaf(), 10, newleaf());
   struct tree *t2 = newbranch(newleaf(), 25, newleaf());
   struct tree *t3 = newbranch(t1, 15, t2);
