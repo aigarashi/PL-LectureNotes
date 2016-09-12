@@ -16,8 +16,8 @@ struct tree {
 };
 
 struct tree *newbranch(struct tree *_left,
-			 int _value,
-			 struct tree *_right) {
+                       int _value,
+                       struct tree *_right) {
   // Allocate a new object in the heap
   struct tree *n = (struct tree *)malloc(sizeof(struct tree));
   // And then initialize the members
@@ -82,21 +82,21 @@ struct tree *delete(struct tree *t, int n) {
   } else /* t is a branch */ {
     if (n == t->value) {
       if (t->left == NULL) {
-	if (t->right == NULL) {
-	  free(t);
-	  return newleaf();
-	} else /* t->right is a branch */ {
-	  return t->right;
-	}
+        if (t->right == NULL) {
+          free(t);
+          return newleaf();
+        } else /* t->right is a branch */ {
+          return t->right;
+        }
       } else /* t->left is a branch */ {
-	if (t->right == NULL) {
-	  return t->left;
-	} else /* t->right is a branch */ {
-	  int m = min(t->right);
-	  t->value = m;
-	  t->right = delete(t->right, m);
-	  return t;
-	}
+        if (t->right == NULL) {
+          return t->left;
+        } else /* t->right is a branch */ {
+          int m = min(t->right);
+          t->value = m;
+          t->right = delete(t->right, m);
+          return t;
+        }
       }
     } else if (n < t->value) {
       t->left = delete(t->left, n);

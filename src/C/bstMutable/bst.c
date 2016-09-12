@@ -106,22 +106,22 @@ struct tree *delete(struct tree *t, int n) {
     struct branch b = t->dat.br;
     if (n == b.value) {
       if (b.left->tag == LEAF) {
-	if (b.right->tag == LEAF) {
-	  free(t);
-	  return newleaf();
-	} else /* b.right->tag == BRANCH*/ {
-	  return b.right;
-	}
+        if (b.right->tag == LEAF) {
+          free(t);
+          return newleaf();
+        } else /* b.right->tag == BRANCH*/ {
+          return b.right;
+        }
       } else /* b.left->tag == BRANCH*/ {
-	if (b.right->tag == LEAF) {
-	  return b.left;
-	} else /* b.right->tag == BRANCH*/ {
-	  int m = min(b.right);
-	  struct tree *newRight = delete(b.right, m);
-	  t->dat.br.value = m;
-	  t->dat.br.right = newRight;
-	  return t;
-	}
+        if (b.right->tag == LEAF) {
+          return b.left;
+        } else /* b.right->tag == BRANCH*/ {
+          int m = min(b.right);
+          struct tree *newRight = delete(b.right, m);
+          t->dat.br.value = m;
+          t->dat.br.right = newRight;
+          return t;
+        }
       }
     } else if (n < b.value) {
       struct tree *newLeft = delete(b.left, n);
