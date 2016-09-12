@@ -2,11 +2,9 @@
  * Write a description of class IsLeaf here.
  * 
  * @author Atsushi Igarashi
- * @version 20160829
+ * @version 20160912
  */
-public class IsLeaf implements BSTVisitorB
-{
-
+public class IsLeaf implements BSTVisitorB {
     /**
      * Constructor for objects of class IsLeaf
      */

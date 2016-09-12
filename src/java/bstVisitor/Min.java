@@ -2,11 +2,9 @@
  * Write a description of class Min here.
  * 
  * @author Atsushi Igarashi
- * @version 20160824
+ * @version 20160912
  */
-public class Min implements BSTVisitorI
-{
-
+public class Min implements BSTVisitorI {
     /**
      * Constructor for objects of class Min
      */
