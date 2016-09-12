@@ -119,7 +119,7 @@ int main(void) {
   bool test5 = find(t8, 23);  // should be false
   struct tree *t9 = delete(t8, 30);
   bool test6 = find(t9, 30);  // should be false
-  bool test7 = find(t9,48);  // should be true
+  bool test7 = find(t9, 48);  // should be true
   printf("test 1: %d\n", test1);
   printf("test 2: %d\n", test2);
   printf("test 3: %d\n", test3);
