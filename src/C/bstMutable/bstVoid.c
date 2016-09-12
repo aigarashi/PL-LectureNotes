@@ -12,7 +12,7 @@
 struct tree {
   enum nkind { LEAF, BRANCH } tag;
   union {
-    struct leaf {} lf;
+    struct leaf { int dummy; } lf;
     struct branch {
       struct tree *left;
       int value;
