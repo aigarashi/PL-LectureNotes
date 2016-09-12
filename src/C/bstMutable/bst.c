@@ -36,14 +36,14 @@ struct tree {
    but, for uniformity, a more complicated version is used
 */
 
-struct tree *newbranch(struct tree *_left, int _value, struct tree *_right) {
+struct tree *newbranch(struct tree *left, int value, struct tree *right) {
   // Allocate a new object in the heap
   struct tree *n = (struct tree *)malloc(sizeof(struct tree));
   // And then initialize the members
   n->tag = BRANCH;            // could be written (*n).tag = BRANCH
-  n->dat.br.left = _left;
-  n->dat.br.value = _value;
-  n->dat.br.right = _right;
+  n->dat.br.left = left;
+  n->dat.br.value = value;
+  n->dat.br.right = right;
   return n;
 }
 

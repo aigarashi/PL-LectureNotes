@@ -14,15 +14,15 @@ struct tree {
   struct tree *right;
 };
 
-struct tree *newbranch(struct tree *_left,
-                       int _value,
-                       struct tree *_right) {
+struct tree *newbranch(struct tree *left,
+                       int value,
+                       struct tree *right) {
   // Allocate a new object in the heap
   struct tree *n = (struct tree *)malloc(sizeof(struct tree));
   // And then initialize the members
-  n->left = _left;
-  n->value = _value;
-  n->right = _right;
+  n->left = left;
+  n->value = value;
+  n->right = right;
   return n;
 }
 
