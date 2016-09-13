@@ -3,7 +3,7 @@
  * Immutable data structure so that tree manipulation returns a new tree.
  * 
  * @author Atsushi Igarashi 
- * @version 20160825
+ * @version 20160912
  * 
  */
 public class BinarySearchTree {
@@ -14,11 +14,11 @@ public class BinarySearchTree {
     /**
      * Constructor for objects of class Leaf
      */
-    public BinarySearchTree(BinarySearchTree _left, int _v,
-			    BinarySearchTree _right) {
-        left = _left;
-        v = _v;
-        right = _right;
+    public BinarySearchTree(BinarySearchTree left, int v,
+			    BinarySearchTree right) {
+        this.left = left;
+        this.v = v;
+        this.right = right;
     }
 
     /**

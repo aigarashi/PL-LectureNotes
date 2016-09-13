@@ -2,20 +2,17 @@
  * Write a description of class Insert here.
  * 
  * @author Atsushi Igarashi
- * @version 20160824
+ * @version 20160912
  */
-public class Insert implements BSTVisitorBST
-{
-    // instance variables - replace the example below with your own
+public class Insert implements BSTVisitorBST {
     private int n;
 
     /**
      * Constructor for objects of class Insert
      */
-    public Insert(int _n)
-    {
-        // initialise instance variables
-        n = _n;
+    public Insert(int n) { 
+    // initialise instance variables
+        this.n = n;
     }
 
     public BinarySearchTree caseLeaf() {

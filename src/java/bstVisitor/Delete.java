@@ -2,20 +2,17 @@
  * Write a description of class Insert here.
  * 
  * @author Atsushi Igarashi
- * @version 20160824
+ * @version 20160912
  */
-public class Delete implements BSTVisitorBST
-{
+public class Delete implements BSTVisitorBST {
     // instance variables - replace the example below with your own
     private int n;
 
     /**
      * Constructor for objects of class Insert
      */
-    public Delete(int _n)
-    {
-        // initialise instance variables
-        n = _n;
+    public Delete(int n) {
+        this.n = n;
     }
 
     public BinarySearchTree caseLeaf() {

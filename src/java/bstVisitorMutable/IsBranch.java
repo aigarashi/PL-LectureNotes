@@ -2,10 +2,9 @@
  * Write a description of class IsBranch here.
  * 
  * @author Atsushi Igarashi
- * @version 20160829
+ * @version 20160912
  */
-public class IsBranch implements BSTVisitorB
-{
+public class IsBranch implements BSTVisitorB {
     /**
      * Constructor for objects of class IsBranch
      */

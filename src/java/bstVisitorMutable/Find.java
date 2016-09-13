@@ -2,14 +2,13 @@
  * Write a description of class Find here.
  * 
  * @author Atsushi Igarashi
- * @version 20160829
+ * @version 20160912
  */
-public class Find implements BSTVisitorB
-{
+public class Find implements BSTVisitorB {
     private int n;
     
-    public Find(int _n) {
-        n = _n;
+    public Find(int n) {
+        this.n = n;
     }
     
     public boolean caseLeaf() {

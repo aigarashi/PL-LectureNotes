@@ -2,10 +2,9 @@
  * Write a description of class Leaf here.
  * 
  * @author Atsushi Igarashi
- * @version 20160824
+ * @version 20160912
  */
-public class Leaf implements BinarySearchTree
-{
+public class Leaf implements BinarySearchTree {
     public Leaf() {
     }
     
