@@ -15,7 +15,7 @@ public class BinarySearchTree {
      * Constructor for objects of class Leaf
      */
     public BinarySearchTree(BinarySearchTree left, int v,
-			    BinarySearchTree right) {
+                            BinarySearchTree right) {
         this.left = left;
         this.v = v;
         this.right = right;
@@ -28,22 +28,22 @@ public class BinarySearchTree {
      * @return      whether n is found in the BST
      */
     public boolean find(int n) {
-	if (n == v) {
-	    return true;
-	} else if (n < v) {
-	    /* same as return (left!=null)&&(left.find(n)) */
-	    if (left != null) {
-		return left.find(n);
-	    } else {
-		return false;
-	    }
-	} else /* n > v */ {
-	    if (right != null) {
-		return right.find(n);
-	    } else {
-		return false;
-	    }
-	}
+        if (n == v) {
+            return true;
+        } else if (n < v) {
+            /* same as return (left!=null)&&(left.find(n)) */
+            if (left != null) {
+                return left.find(n);
+            } else {
+                return false;
+            }
+        } else /* n > v */ {
+            if (right != null) {
+                return right.find(n);
+            } else {
+                return false;
+            }
+        }
     }
 
     /**
@@ -53,24 +53,24 @@ public class BinarySearchTree {
      * @return      a new BST with n (or the same tree, if n is already in the BST)
      */
     public BinarySearchTree insert(int n) {
-	if (n == v) { return this; }
-	else if (n < v) {
-	    if (left != null) {
-		BinarySearchTree newLeft = left.insert(n);
-		return new BinarySearchTree(newLeft, v, right);
-	    } else {
-		BinarySearchTree newLeft = new BinarySearchTree(null, n, null);
-		return new BinarySearchTree(newLeft, v, right);
-	    }
-	} else /* n > v */ {
-	    if (right != null) {
-		BinarySearchTree newRight = right.insert(n);
-		return new BinarySearchTree(left, v, newRight);
-	    } else {
-		BinarySearchTree newRight = new BinarySearchTree(null, n, null);
-		return new BinarySearchTree(left, v, newRight);
-	    }
-	}
+        if (n == v) { return this; }
+        else if (n < v) {
+            if (left != null) {
+                BinarySearchTree newLeft = left.insert(n);
+                return new BinarySearchTree(newLeft, v, right);
+            } else {
+                BinarySearchTree newLeft = new BinarySearchTree(null, n, null);
+                return new BinarySearchTree(newLeft, v, right);
+            }
+        } else /* n > v */ {
+            if (right != null) {
+                BinarySearchTree newRight = right.insert(n);
+                return new BinarySearchTree(left, v, newRight);
+            } else {
+                BinarySearchTree newRight = new BinarySearchTree(null, n, null);
+                return new BinarySearchTree(left, v, newRight);
+            }
+        }
     }
 
     /**
@@ -79,11 +79,11 @@ public class BinarySearchTree {
      * @return      a minimum number in the BST
      */
     public int min() {
-	if (left!=null) {
-	    return left.min();
-	} else {
-	    return v;
-	}
+        if (left!=null) {
+            return left.min();
+        } else {
+            return v;
+        }
     }
 
     /**
@@ -93,24 +93,24 @@ public class BinarySearchTree {
      * @return      a new BST without n (or the same tree, if n is not in the BST)
      */
     public BinarySearchTree delete(int n) {
-	if (n == v) {
-	    if (left==null) {
-		if (right==null) {
-		    return null;
-		} else {
-		    return right;
-		}
-	    } else {
-		if (right==null) {
-		    return left;
-		} else {
-		    int m = right.min();
-		    BinarySearchTree newRight = right.delete(m);
-		    return new BinarySearchTree(left, m, newRight);
-		}
-	    }
-	} else if (n < v) {
-	    BinarySearchTree newLeft = left.delete(n);
+        if (n == v) {
+            if (left==null) {
+                if (right==null) {
+                    return null;
+                } else {
+                    return right;
+                }
+            } else {
+                if (right==null) {
+                    return left;
+                } else {
+                    int m = right.min();
+                    BinarySearchTree newRight = right.delete(m);
+                    return new BinarySearchTree(left, m, newRight);
+                }
+            }
+        } else if (n < v) {
+            BinarySearchTree newLeft = left.delete(n);
             return new BinarySearchTree(newLeft, v, right);
         } else /* n > v */ {
             BinarySearchTree newRight = right.delete(n);

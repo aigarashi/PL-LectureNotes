@@ -64,7 +64,7 @@ public class Leaf implements BinarySearchTree {
      * @param  n    the number to be deleted
      */
     public BinarySearchTree delete(int n) {
-	// n doesn't exist in this tree.  So return the tree as it is.
+        // n doesn't exist in this tree.  So return the tree as it is.
         return this;
     }
 }

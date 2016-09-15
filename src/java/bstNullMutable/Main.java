@@ -12,7 +12,7 @@ public class Main {
         BinarySearchTree t4 = new BinarySearchTree(null, 60, null);
         BinarySearchTree t5 = new BinarySearchTree(null, 48, t4);
         BinarySearchTree t6 = new BinarySearchTree(t3, 30, t5);
-	Root t = new Root(t6);
+        Root t = new Root(t6);
         boolean test1 = t.find(30);  // should be true
         boolean test2 = t.find(13);  // should be false
         t.insert(23);

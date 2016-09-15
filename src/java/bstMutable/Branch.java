@@ -52,13 +52,13 @@ public class Branch implements BinarySearchTree {
      */
     public BinarySearchTree insert(int n) {
         if (n == v) {
-	    // do nothing
+            // do nothing
         } else if (n < v) {
-	    left = left.insert(n);
+            left = left.insert(n);
         } else /* n > v */ {
-	    right = right.insert(n);
+            right = right.insert(n);
         }
-	return this;
+        return this;
     }
 
     /**
@@ -89,10 +89,10 @@ public class Branch implements BinarySearchTree {
                 if (right.isLeaf()) {
                     return left;
                 } else {
-		    // copy the number next to n (the minimum number
-		    // in right) and delete it from right.
+                    // copy the number next to n (the minimum number
+                    // in right) and delete it from right.
                     int m = right.min();
-		    v = m;
+                    v = m;
                     right = right.delete(m);
                     return this;
                 }
