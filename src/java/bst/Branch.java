@@ -26,11 +26,11 @@ public class Branch implements BinarySearchTree {
      */
     public boolean isLeaf() { return false; }
     /**
-     * A method to ask if the tree is a node.
+     * A method to ask if the tree is a branch.
      * 
-     * @return      whether the tree is a node or not
+     * @return      whether the tree is a branch or not
      */
-    public boolean isNode() { return true; }
+    public boolean isBranch() { return true; }
     /**
      * A method to find the given number in a BST.
      * 

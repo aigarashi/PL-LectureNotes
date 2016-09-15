@@ -19,11 +19,11 @@ public interface BinarySearchTree {
      */
     boolean isLeaf();
     /**
-     * A method to ask if the tree is a node.
+     * A method to ask if the tree is a branch.
      * 
-     * @return      whether the tree is a node or not
+     * @return      whether the tree is a branch or not
      */
-    boolean isNode();    
+    boolean isBranch();    
 
     /**
      * A method to find the given number in a BST.
