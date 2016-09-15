@@ -14,6 +14,7 @@ public class IsLeaf implements BSTVisitorB {
     public boolean caseLeaf() {
         return true;
     }
+
     public boolean caseBranch(Branch that) {
         return false;
     }

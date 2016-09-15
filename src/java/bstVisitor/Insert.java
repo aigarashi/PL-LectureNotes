@@ -10,7 +10,7 @@ public class Insert implements BSTVisitorBST {
     /**
      * Constructor for objects of class Insert
      */
-    public Insert(int n) { 
+    public Insert(int n) {
     // initialise instance variables
         this.n = n;
     }
@@ -18,8 +18,8 @@ public class Insert implements BSTVisitorBST {
     public BinarySearchTree caseLeaf() {
         return new Branch(new Leaf(), n, new Leaf());
     }
-    
-    public BinarySearchTree caseBranch(BinarySearchTree left, 
+
+    public BinarySearchTree caseBranch(BinarySearchTree left,
                                        int v,
                                        BinarySearchTree right) {
         if (n == v) {

@@ -18,35 +18,35 @@ public class Delete implements BSTVisitorBST {
     public BinarySearchTree caseLeaf() {
         return new Leaf();
     }
-    
+
     public BinarySearchTree caseBranch(Branch that) {
         if (n == that.getV()) {
             if (that.getLeft().accept(new IsLeaf())) {
-		BinarySearchTree right = that.getRight();
+                BinarySearchTree right = that.getRight();
                 if (right.accept(new IsLeaf())) {
                     return new Leaf();
                 } else {
                     return right;
                 }
             } else {
-		BinarySearchTree right = that.getRight();
+                BinarySearchTree right = that.getRight();
                 if (right.accept(new IsLeaf())) {
                     return that.getLeft();
                 } else {
                     int m = right.accept(new Min());
                     BinarySearchTree newRight = right.accept(new Delete(m));
                     that.setRight(newRight);
-		    return that;
+                    return that;
                 }
             }
         } else if (n < that.getV()) {
             BinarySearchTree newLeft = that.getLeft().accept(new Delete(n));
             that.setLeft(newLeft);
-	    return that;
+            return that;
         } else /* n > v */ {
             BinarySearchTree newRight = that.getRight().accept(new Delete(n));
             that.setRight(newRight);
-	    return that;
+            return that;
         }
     }
 }

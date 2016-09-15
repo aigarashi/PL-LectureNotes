@@ -5,27 +5,26 @@
  * @version 20160825
  *
  */
-
 public class Root {
     private BinarySearchTree root;
 
     public Root() {
-	root = new Leaf();
+        root = new Leaf();
     }
 
     public Root(BinarySearchTree t) {
-	root = t;
+        root = t;
     }
-    
+
     public boolean find(int n) {
-	return root.find(n);
+        return root.find(n);
     }
 
     public void insert(int n) {
-	root = root.insert(n);
+        root = root.insert(n);
     }
 
     public void delete(int n) {
-	root = root.delete(n);
+        root = root.delete(n);
     }
 }
