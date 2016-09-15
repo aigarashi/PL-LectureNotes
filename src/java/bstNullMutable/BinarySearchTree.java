@@ -2,7 +2,7 @@
  * Two kinds of nodes (leaf or branch) are expressed by whether the value is null or not.
  * Immutable data structure so that tree manipulation returns a new tree.
  * 
- * @author Atsushi Igarashi 
+ * @author Atsushi Igarashi
  * @version 20160912
  * 
  */
@@ -10,7 +10,7 @@ public class BinarySearchTree {
     private BinarySearchTree left;
     private  int v;
     private BinarySearchTree right;
-    
+
     /**
      * Constructor for objects of class Leaf
      */
@@ -45,7 +45,7 @@ public class BinarySearchTree {
 	    }
 	}
     }
-    
+
     /**
      * A method to insert a number into a BST.
      * 
@@ -71,7 +71,7 @@ public class BinarySearchTree {
 	}
 	return this;
     }
-    
+
     /**
      * A method to find a minimum number in a BST
      * 
@@ -84,7 +84,7 @@ public class BinarySearchTree {
 	    return v;
 	}
     }
-    
+
     /**
      * A method to delete a number from a BST.
      * 

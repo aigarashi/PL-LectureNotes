@@ -18,7 +18,7 @@ public class Delete implements BSTVisitorBST {
     public BinarySearchTree caseLeaf() {
         return new Leaf();
     }
-    
+
     public BinarySearchTree caseBranch(Branch that) {
         if (n == that.getV()) {
             if (that.getLeft().accept(new IsLeaf())) {

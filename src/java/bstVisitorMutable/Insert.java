@@ -18,7 +18,7 @@ public class Insert implements BSTVisitorBST {
     public BinarySearchTree caseLeaf() {
         return new Branch(new Leaf(), n, new Leaf());
     }
-    
+
     public BinarySearchTree caseBranch(Branch that) {
         if (n == that.getV()) {
             return that;

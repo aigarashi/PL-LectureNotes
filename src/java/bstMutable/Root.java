@@ -5,7 +5,6 @@
  * @version 20160825
  *
  */
-
 public class Root {
     private BinarySearchTree root;
 
@@ -16,7 +15,7 @@ public class Root {
     public Root(BinarySearchTree t) {
 	root = t;
     }
-    
+
     public boolean find(int n) {
 	return root.find(n);
     }

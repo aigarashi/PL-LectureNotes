@@ -44,7 +44,7 @@ public class Branch implements BinarySearchTree {
         else if (n < v) { return left.find(n); }
         else /* n > v */ { return right.find(n); }
     }
-    
+
     /**
      * A method to insert a number into a BST.  Do nothing if n exists in the tree.
      * 
@@ -60,7 +60,7 @@ public class Branch implements BinarySearchTree {
         }
 	return this;
     }
-    
+
     /**
      * A method to find a minimum number in a BST
      * 
@@ -68,9 +68,9 @@ public class Branch implements BinarySearchTree {
      */
     public int min() {
         if (left.isLeaf()) { return v; }
-        else { return left.min(); }        
+        else { return left.min(); }
     }
-    
+
     /**
      * A method to delete a number from a BST.
      * 

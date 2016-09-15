@@ -20,14 +20,14 @@ public class Leaf implements BinarySearchTree {
      * @return      whether the tree is a leaf or not
      */
     public boolean isLeaf() { return true; }
-    
+
     /**
      * A method to ask if the tree is a node.
      * 
      * @return      whether the tree is a node or not
      */
     public boolean isNode() { return false; }
-    
+
     /**
      * A method to find the given number in a BST.
      * 
@@ -36,9 +36,9 @@ public class Leaf implements BinarySearchTree {
      */
     public boolean find(int n) {
        // n doesn't exist in this BST
-       return false;  
+       return false;
     }
-    
+
     /**
      * A method to insert a number into a BST.
      * 
@@ -49,7 +49,7 @@ public class Leaf implements BinarySearchTree {
         // a new singleton tree holding n
         return new Branch(new Leaf(), n, new Leaf());
     }
-    
+
     /**
      * A method to find a minimum number in a BST
      * 
@@ -59,7 +59,7 @@ public class Leaf implements BinarySearchTree {
         // there is no minimum number in the BST
         return -255;
     }
-    
+
     /**
      * A method to delete a number from a BST.
      * 
