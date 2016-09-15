@@ -7,7 +7,7 @@
  * that style, because deleting a node requires to inform its parent
  * that the node has been deleted....
  * 
- * @author Atsushi Igarashi 
+ * @author Atsushi Igarashi
  * @version 20160825
  * 
  */
@@ -18,6 +18,7 @@ public interface BinarySearchTree {
      * @return      whether the tree is a leaf or not
      */
     boolean isLeaf();
+
     /**
      * A method to ask if the tree is a branch.
      * 
@@ -32,26 +33,25 @@ public interface BinarySearchTree {
      * @return      whether n is found in the BST
      */
     boolean find(int n);
-    
+
     /**
      * A method to insert a number into a BST.
      * 
      * @param  n    the number to be added
      */
     BinarySearchTree insert(int n);
-    
+
     /**
      * A method to find a minimum number in a BST
      * 
      * @return      a minimum number in the BST (or -255, if the tree is empty)
      */
     int min();
-    
+
     /**
      * A method to delete a number from a BST.
      * 
      * @param  n    the number to be deleted
      */
     BinarySearchTree delete(int n);
-    
 }

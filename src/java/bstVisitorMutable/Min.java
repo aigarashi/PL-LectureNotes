@@ -14,7 +14,7 @@ public class Min implements BSTVisitorI {
     public int caseLeaf() {
         return -255;
     }
-    
+
     public int caseBranch(Branch that) {
         if (that.getLeft().accept(new IsLeaf())) {
             return that.getV();

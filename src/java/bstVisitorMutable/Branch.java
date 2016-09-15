@@ -8,7 +8,7 @@ public class Branch implements BinarySearchTree {
     private BinarySearchTree left;
     private int v;
     private BinarySearchTree right;
-   
+
     public Branch(BinarySearchTree left, int v, BinarySearchTree right) {
         this.left = left;
         this.v = v;
@@ -17,34 +17,34 @@ public class Branch implements BinarySearchTree {
 
     // so-called 'getter' methods
     public BinarySearchTree getLeft() {
-	return left;
+        return left;
     }
     public int getV() {
-	return v;
+        return v;
     }
     public BinarySearchTree getRight() {
-	return right;
+        return right;
     }
-    
+
     // so-called 'setter' methods
     public void setLeft(BinarySearchTree newLeft) {
-	left = newLeft;
+        left = newLeft;
     }
     public void setV(int newv) {
-	v = newv;
+        v = newv;
     }
     public void setRight(BinarySearchTree newRight) {
-	right = newRight;
+        right = newRight;
     }
-    
+
     public boolean accept(BSTVisitorB visitor) {
         return visitor.caseBranch(this);
     }
-    
+
     public BinarySearchTree accept(BSTVisitorBST visitor) {
         return visitor.caseBranch(this);
     }
-    
+
     public int accept(BSTVisitorI visitor) {
         return visitor.caseBranch(this);
     }

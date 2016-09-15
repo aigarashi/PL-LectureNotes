@@ -9,6 +9,7 @@ type tree =
       mutable value: int;
       mutable right: tree;
     }
+
 (* (Recursive) function find, which returns whether given integer n exists in BST t *)
 let rec find t n =
   match t with
@@ -18,7 +19,7 @@ let rec find t n =
      else if n < v then find l n
      else find r n
 
-(* (Recursive) function insert, which, given BST t and a new element n, returns 
+(* (Recursive) function insert, which, given BST t and a new element n, returns
    a new binary search tree with n *)
 let rec insert t n =
   match t with
@@ -35,7 +36,7 @@ let rec min t =
     Lf -> -255
   | Br {left=Lf; value=v; right=_} -> v
   | Br {left=l; value=_; right=_} -> min l
-      
+
 (* (Recursive) function delete, which, given BST t and an element n to
    be deleted, returns a new binary search tree without n.  If n is not
    stored in t, it returns t as it is. *)
@@ -44,7 +45,7 @@ let rec delete t n =
   match t with
     Lf -> t
   | Br br ->
-     if n = br.value then 
+     if n = br.value then
        match br.left, br.right with
 	 Lf, Lf -> Lf
        | Br _, Lf -> br.left
@@ -58,10 +59,10 @@ let rec delete t n =
 
 (* These functions could be used directly but a user has to maintain
    the returned root.  Code below is to make code "more imperative" *)
-			       
+
 (* Another datatype to represent the root of a tree *)
-type bst = {mutable root: tree} 
-	     
+type bst = {mutable root: tree}
+
 (* Proxy functions.  They have the same name to prevent the original
    definitions from being called by mistake *)
 
@@ -76,7 +77,6 @@ let insert t n =
 let delete r n =
   r.root <- delete r.root n
 
-		   
 (* Constructing a sample tree *)
 let t1 = Br {left = Lf; value = 10; right = Lf}
 let t2 = Br {left = Lf; value = 25; right = Lf}
@@ -101,7 +101,7 @@ let test5 = find t 23  (* should return false *)
 let () = delete t 30
 let test6 = find t 30
 let test7 = find t 48
-	     
+
 module Aux =
 struct
   let rec preorder t =

@@ -18,7 +18,7 @@ let rec find t n =
      else if n < v then find l n
      else (* n > v *) find r n
 
-(* (Recursive) function insert, which, given BST t and a new element n, returns 
+(* (Recursive) function insert, which, given BST t and a new element n, returns
    a new binary search tree with n *)
 let rec insert t n =
   match t with
@@ -35,7 +35,7 @@ let rec min t =
     Lf -> -255
   | Br {left=Lf; value=v; right=_} -> v
   | Br {left=l; value=_; right=_} -> min l
-      
+
 (* (Recursive) function delete, which, given BST t and an element n to
    be deleted, returns a new binary search tree without n.  If n is not
    stored in t, it returns t as it is. *)
@@ -44,7 +44,7 @@ let rec delete t n =
   match t with
     Lf -> t
   | Br {left=l; value=v; right=r} ->
-     if n = v then 
+     if n = v then
        match l, r with
 	 Lf, Lf -> Lf
        | Br _, Lf -> l
@@ -78,7 +78,7 @@ let test5 = find t8 23  (* should return false *)
 let t9 = delete t8 30
 let test6 = find t9 30
 let test7 = find t9 48
-	     
+
 module Aux =
 struct
   let rec preorder t =

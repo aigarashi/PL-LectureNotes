@@ -18,17 +18,17 @@ public class Insert implements BSTVisitorBST {
     public BinarySearchTree caseLeaf() {
         return new Branch(new Leaf(), n, new Leaf());
     }
-    
+
     public BinarySearchTree caseBranch(Branch that) {
         if (n == that.getV()) {
             return that;
         } else if (n < that.getV()) {
             BinarySearchTree newLeft = that.getLeft().accept(new Insert(n));
-	    that.setLeft(newLeft);
+            that.setLeft(newLeft);
             return that;
         } else /* n > that.v */ {
             BinarySearchTree newRight = that.getRight().accept(new Insert(n));
-	    that.setRight(newRight);
+            that.setRight(newRight);
             return that;
         }
     }
