@@ -105,7 +105,6 @@ struct tree *delete(struct tree *t, int n) {
     if (n == b.value) {
       if (b.left->tag == LEAF) {
         if (b.right->tag == LEAF) {
-          free(t);
           return newleaf();
         } else /* b.right->tag == BRANCH*/ {
           return b.right;
