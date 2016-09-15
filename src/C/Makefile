@@ -1,5 +1,5 @@
 CC ?= gcc
-CFLAGS += -pedantic -std=c99
+CFLAGS += -O0 -std=c99 -g -Wpedantic -Wall -Wextra
 
 SRCS := $(wildcard */*.c)
 TARGETS := $(SRCS:%.c=%.out)
