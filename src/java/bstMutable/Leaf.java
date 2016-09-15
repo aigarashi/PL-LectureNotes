@@ -22,11 +22,11 @@ public class Leaf implements BinarySearchTree {
     public boolean isLeaf() { return true; }
 
     /**
-     * A method to ask if the tree is a node.
+     * A method to ask if the tree is a branch.
      * 
-     * @return      whether the tree is a node or not
+     * @return      whether the tree is a branch or not
      */
-    public boolean isNode() { return false; }
+    public boolean isBranch() { return false; }
 
     /**
      * A method to find the given number in a BST.
