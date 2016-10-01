@@ -58,7 +58,7 @@
 * X. Leroy, D. Doligez, A. Frisch, J. Garrigue, D. Rémy and J. Vouillon.
 [The OCaml System Documentation and User's Manual](http://caml.inria.fr/pub/docs/manual-ocaml/index.html)
 * J. Gosling, B. Joy, G. Steele, G. Bracha, A. Buckley.  [The Java Language Specification. Java SE 8 Edition.](https://docs.oracle.com/javase/specs/jls/se8/html/index.html)
-* C99 (ISOが1999年に定めたC言語規格 ISO/IEC 9899:1999) (正式版は有料だが，(ドラフト)[http://www.open-std.org/jtc1/sc22/WG14/www/docs/n1256.pdf]が落ちている．) その後 C11 に改訂されている．
+* C99 (ISOが1999年に定めたC言語規格 ISO/IEC 9899:1999) (正式版は有料だが，[ドラフト](http://www.open-std.org/jtc1/sc22/WG14/www/docs/n1256.pdf)が落ちている．) その後 C11 に改訂されている．
 
 ### OCaml 情報
 * 五十嵐 淳． [OCaml 入門](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/isle4-11w/mltext.pdf) (計算機科学実験及演習4の資料．次の本の元になった草稿)
