@@ -61,8 +61,8 @@
 * C99 (ISOが1999年に定めたC言語規格 ISO/IEC 9899:1999) (正式版は有料だが，[ドラフト](http://www.open-std.org/jtc1/sc22/WG14/www/docs/n1256.pdf)が落ちている．) その後 C11 に改訂されている．
 
 ### OCaml 情報
-* 五十嵐 淳． [OCaml 入門](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/isle4-11w/mltext.pdf) (計算機科学実験及演習4の資料．次の本の元になった草稿)
-* 五十嵐淳．[プログラミング in OCaml](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/OCaml/)．技術評論社．買って!
+* 五十嵐淳． [OCaml 入門](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/isle4-11w/mltext.pdf) (次の本の元になった計算機科学実験及演習4の資料．この講義の範囲ならこれで十分)
+* 五十嵐淳．[プログラミング in OCaml](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/OCaml/)．技術評論社．(でもこれも買ってくれるとうれしい!)
 * [OCaml MOOC2](https://t.co/jI01aqUzBN) (2016年9月下旬に開講しているが，登録はまだ間に合うので興味がある人は受講しよう!)
 
 
