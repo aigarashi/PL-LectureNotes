@@ -1,5 +1,7 @@
 # 工学部専門科目「プログラミング言語」講義資料(2016年度)
 
+このページのURL: http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/ (現在 https://github.com/aigarashi/PL-LectureNotes に転送されます．)
+
 ## 開講情報・担当
 
 * 曜時限: 月曜日2限(10:30〜12:00)
