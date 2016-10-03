@@ -69,4 +69,4 @@
 
 
 -----------
-igarashi@kuis.kyoto-u.ac.jp
+pl16@fos.kuis.kyoto-u.ac.jp
