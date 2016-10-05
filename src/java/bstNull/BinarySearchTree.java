@@ -110,11 +110,19 @@ public class BinarySearchTree {
                 }
             }
         } else if (n < v) {
-            BinarySearchTree newLeft = left.delete(n);
-            return new BinarySearchTree(newLeft, v, right);
+	    if (left != null) {
+		BinarySearchTree newLeft = left.delete(n);
+		return new BinarySearchTree(newLeft, v, right);
+	    } else {
+		return this;
+	    }
         } else /* n > v */ {
-            BinarySearchTree newRight = right.delete(n);
-            return new BinarySearchTree(left, v, newRight);
+	    if (right != null) {
+		BinarySearchTree newRight = right.delete(n);
+		return new BinarySearchTree(left, v, newRight);
+	    } else {
+		return this;
+	    }
         }
     }
 }
