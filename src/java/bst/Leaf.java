@@ -27,7 +27,7 @@ public class Leaf implements BinarySearchTree {
      * @return      whether the tree is a branch or not
      */
     public boolean isBranch() { return false; }
-    
+
     /**
      * A method to find the given number in a BST.
      * 

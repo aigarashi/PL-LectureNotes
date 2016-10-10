@@ -20,7 +20,7 @@ public interface BinarySearchTree {
      * @return      whether the tree is a branch or not
      */
     boolean isBranch();    
-    
+
     /**
      * A method to find the given number in a BST.
      * 
