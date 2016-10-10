@@ -43,8 +43,10 @@ public class Leaf implements BinarySearchTree {
      * A method to insert a number into a BST.
      * 
      * @param  n    the number to be added
+     * @return      a new BST with n (or the same tree, if n is already in the BST)
      */
     public BinarySearchTree insert(int n) {
+        // a new singleton tree holding n
         return new Branch(new Leaf(), n, new Leaf());
     }
 
@@ -62,6 +64,7 @@ public class Leaf implements BinarySearchTree {
      * A method to delete a number from a BST.
      * 
      * @param  n    the number to be deleted
+     * @return      a new BST without n (or the same tree, if n is not in the BST)
      */
     public BinarySearchTree delete(int n) {
         // n doesn't exist in this tree.  So return the tree as it is.

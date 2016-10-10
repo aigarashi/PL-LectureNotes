@@ -49,6 +49,7 @@ public class Branch implements BinarySearchTree {
      * A method to insert a number into a BST.  Do nothing if n exists in the tree.
      * 
      * @param  n    the number to be added
+     * @return      a new BST with n (or the same tree, if n is already in the BST)
      */
     public BinarySearchTree insert(int n) {
         if (n == v) {

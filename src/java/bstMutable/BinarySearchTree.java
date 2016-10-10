@@ -38,6 +38,7 @@ public interface BinarySearchTree {
      * A method to insert a number into a BST.
      * 
      * @param  n    the number to be added
+     * @return      a new BST with n (or the same tree, if n is already in the BST)
      */
     BinarySearchTree insert(int n);
 
@@ -52,6 +53,7 @@ public interface BinarySearchTree {
      * A method to delete a number from a BST.
      * 
      * @param  n    the number to be deleted
+     * @return      a new BST without n (or the same tree, if n is not in the BST)
      */
     BinarySearchTree delete(int n);
 }
