@@ -82,15 +82,15 @@ struct tree *delete(struct tree *t, int n) {
     if (n == t->value) {
       if (t->left == NULL) {
         if (t->right == NULL) {
-	  free(t);
+          free(t);
           return newleaf();
         } else /* t->right is a branch */ {
-	  free(t);
+          free(t);
           return t->right;
         }
       } else /* t->left is a branch */ {
         if (t->right == NULL) {
-	  free(t);
+          free(t);
           return t->left;
         } else /* t->right is a branch */ {
           int m = min(t->right);
