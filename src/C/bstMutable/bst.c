@@ -105,12 +105,19 @@ struct tree *delete(struct tree *t, int n) {
     if (n == b.value) {
       if (b.left->tag == LEAF) {
         if (b.right->tag == LEAF) {
+	  free(b.left);
+	  free(b.right);
+	  free(t);
           return newleaf();
         } else /* b.right->tag == BRANCH*/ {
+	  free(b.left);
+	  free(t);
           return b.right;
         }
       } else /* b.left->tag == BRANCH*/ {
         if (b.right->tag == LEAF) {
+	  free(b.right);
+	  free(t);
           return b.left;
         } else /* b.right->tag == BRANCH*/ {
           int m = min(b.right);
