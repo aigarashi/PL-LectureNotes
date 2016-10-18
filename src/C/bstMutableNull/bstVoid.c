@@ -89,13 +89,15 @@ struct tree *delete_aux(struct tree *t, int n) {
           free(t);
           return newleaf();
         } else /* t->right is a branch */ {
+	  struct tree *right = t->right;
           free(t);
-          return t->right;
+          return right;
         }
       } else /* t->left is a branch */ {
         if (t->right == NULL) {
+	  struct tree *left = t->left;
           free(t);
-          return t->left;
+          return left;
         } else /* t->right is a branch */ {
           int m = min(t->right);
           t->value = m;
@@ -113,6 +115,15 @@ struct tree *delete_aux(struct tree *t, int n) {
   }
 }
 
+void free_tree(struct tree *t) {
+  if (t != NULL) {
+    free_tree(t->left);
+    free_tree(t->right);
+    free(t);
+  }
+  return;
+}
+
 // Functions to delegate to recursive functions
 bool find(struct root *r, int n) {
   return find_aux(r->t, n);
@@ -125,6 +136,12 @@ void insert(struct root *r, int n) {
 
 void delete(struct root *r, int n) {
   r->t = delete_aux(r->t, n);
+  return;
+}
+
+void free_root(struct root *r) {
+  free_tree(r->t);
+  free(r);
   return;
 }
 
@@ -151,5 +168,6 @@ int main(void) {
   printf("test 4: %d\n", test4);
   printf("test 5: %d\n", test5);
   printf("test 6: %d\n", test6);
+  free_root(r);
   return 0;
 }

@@ -75,6 +75,7 @@ bool find_aux(struct tree *t, int n) {
 
 struct tree *insert_aux(struct tree *t, int n) {
   if (t->tag == LEAF) {
+    free(t);
     return newbranch(newleaf(), n, newleaf());
   } else /* t->tag == BRANCH */ {
     struct branch b = t->dat.br;
@@ -104,6 +105,7 @@ int min(struct tree *t) {
 
 struct tree *delete_aux(struct tree *t, int n) {
   if (t->tag == LEAF) {
+    free(t);
     return t;
   } else /* t->tag == BRANCH */ {
     struct branch b = t->dat.br;
@@ -115,15 +117,17 @@ struct tree *delete_aux(struct tree *t, int n) {
           free(t);
           return newleaf();
         } else /* b.right->tag == BRANCH*/ {
+	  struct tree *right = b.right;
           free(b.left);
           free(t);
-          return b.right;
+          return right;
         }
       } else /* b.left->tag == BRANCH*/ {
         if (b.right->tag == LEAF) {
+	  struct tree *left = b.left;
           free(b.right);
           free(t);
-          return b.left;
+          return left;
         } else /* b.right->tag == BRANCH*/ {
           int m = min(b.right);
           struct tree *newRight = delete_aux(b.right, m);
@@ -144,6 +148,18 @@ struct tree *delete_aux(struct tree *t, int n) {
   }
 }
 
+void free_tree(struct tree *t) {
+  if (t->tag == LEAF) {
+    free(t);
+  } else /* t->tag == BRANCH */ {
+    struct branch b = t->dat.br;
+    free_tree(b.left);
+    free_tree(b.right);
+    free(t);
+  }
+  return;
+}
+
 // Functions to delegate to recursive functions
 bool find(struct root *r, int n) {
   return find_aux(r->t, n);
@@ -158,6 +174,13 @@ void delete(struct root *r, int n) {
   r->t = delete_aux(r->t, n);
   return;
 }
+
+void free_root(struct root *r) {
+  free_tree(r->t);
+  free(r);
+  return;
+}
+
 
 int main(void) {
   struct tree *t1 = newbranch(newleaf(), 10, newleaf());
@@ -182,5 +205,6 @@ int main(void) {
   printf("test 4: %d\n", test4);
   printf("test 5: %d\n", test5);
   printf("test 6: %d\n", test6);
+  free_root(r);
   return 0;
 }
