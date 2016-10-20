@@ -111,14 +111,14 @@ struct tree *delete(struct tree *t, int n) {
           free(t);
           return newleaf();
         } else /* b.right->tag == BRANCH*/ {
-	  struct tree *right = b.right;
+          struct tree *right = b.right;
           free(b.left);
           free(t);
           return right;
         }
       } else /* b.left->tag == BRANCH*/ {
         if (b.right->tag == LEAF) {
-	  struct tree *left = b.left;
+          struct tree *left = b.left;
           free(b.right);
           free(t);
           return left;

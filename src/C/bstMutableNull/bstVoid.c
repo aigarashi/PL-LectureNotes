@@ -89,13 +89,13 @@ struct tree *delete_aux(struct tree *t, int n) {
           free(t);
           return newleaf();
         } else /* t->right is a branch */ {
-	  struct tree *right = t->right;
+          struct tree *right = t->right;
           free(t);
           return right;
         }
       } else /* t->left is a branch */ {
         if (t->right == NULL) {
-	  struct tree *left = t->left;
+          struct tree *left = t->left;
           free(t);
           return left;
         } else /* t->right is a branch */ {
