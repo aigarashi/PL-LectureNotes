@@ -105,7 +105,6 @@ int min(struct tree *t) {
 
 struct tree *delete_aux(struct tree *t, int n) {
   if (t->tag == LEAF) {
-    free(t);
     return t;
   } else /* t->tag == BRANCH */ {
     struct branch b = t->dat.br;
