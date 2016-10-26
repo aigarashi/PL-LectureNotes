@@ -33,12 +33,12 @@
 
 ## 授業スケジュールと配布資料
 
-|回数|日付| 内容(予定) | 資料 | 宿題 |
+|回数|日付| 内容 | 資料 | 宿題 |
 |----|----|-----------|------|------|
-|1   |10/3|           | [00-introduction.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/00-introduction.html)  |      |
-|2   |10/17|           | [01-bst-java.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/01-bst-java.html)  |      |
-|3   |10/24|           |      |      |
-|4   |10/31|           |      |      |
+|1   |10/3|導入・二分探索木の復習           | [00-introduction.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/00-introduction.html)  |      |
+|2   |10/17|二分探索木 in Java (1) | [01-bst-java.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/01-bst-java.html), [02-java-basics.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/02-java-basics.html)  |      |
+|3   |10/24|二分探索木 in Java (2) | [03-bst-java-vars.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/03-bst-java-vars.html)     |      |
+|4   |10/31|OCaml入門，二分探索木 in OCaml  |      |      |
 |5   |11/7|            |      |      |
 |6   |11/14|          |      |      |
 |7   |11/28|           |      |      |
@@ -50,7 +50,7 @@
 |13  |1/16| (休講予定) |      |      |
 |14  |1/23|           |      |      |
 |15  |1/30|           |      |      |
-|    |2/7?|試験      |      |      |
+|    |2/6?|試験      |      |      |
 
 講義で紹介するプログラムは(上のファイル一覧にある) src/ 以下で公開するので適宜ダウンロードしてもらいたい．
 
