@@ -62,31 +62,32 @@ bool find_aux(struct tree *t, int n) {
   if (t->tag == LEAF) {
     return false;
   } else /* t->tag == BRANCH */ {
-    struct branch b = t->dat.br;
-    if (n == b.value) {
+    struct branch *b = &(t->dat.br);
+    if (n == b->value) {
       return true;
-    } else if (n < b.value) {
-      return find_aux(b.left, n);
-    } else /* n > b.value */ {
-      return find_aux(b.right, n);
+    } else if (n < b->value) {
+      return find_aux(b->left, n);
+    } else /* n > b->value */ {
+      return find_aux(b->right, n);
     }
   }
 }
 
 struct tree *insert_aux(struct tree *t, int n) {
   if (t->tag == LEAF) {
+    free(t);
     return newbranch(newleaf(), n, newleaf());
   } else /* t->tag == BRANCH */ {
-    struct branch b = t->dat.br;
-    if (n == b.value) {
+    struct branch *b = &(t->dat.br);
+    if (n == b->value) {
       return t;
-    } else if (n < b.value) {
-      struct tree *newleft = insert_aux(b.left, n);
-      t->dat.br.left = newleft;
+    } else if (n < b->value) {
+      struct tree *newleft = insert_aux(b->left, n);
+      b->left = newleft;
       return t;
-    } else /* n > b.value */ {
-      struct tree *newright = insert_aux(b.right, n);
-      t->dat.br.right = newright;
+    } else /* n > b->value */ {
+      struct tree *newright = insert_aux(b->right, n);
+      b->right = newright;
       return t;
     }
   }
@@ -94,11 +95,11 @@ struct tree *insert_aux(struct tree *t, int n) {
 
 int min(struct tree *t) {
   assert(t->tag == BRANCH);
-  struct branch b = t->dat.br;
-  if (b.left->tag == LEAF) {
-    return b.value;
+  struct branch *b = &(t->dat.br);
+  if (b->left->tag == LEAF) {
+    return b->value;
   } else {
-    return min(b.left);
+    return min(b->left);
   }
 }
 
@@ -106,35 +107,56 @@ struct tree *delete_aux(struct tree *t, int n) {
   if (t->tag == LEAF) {
     return t;
   } else /* t->tag == BRANCH */ {
-    struct branch b = t->dat.br;
-    if (n == b.value) {
-      if (b.left->tag == LEAF) {
-        if (b.right->tag == LEAF) {
+    struct branch *b = &(t->dat.br);
+    if (n == b->value) {
+      if (b->left->tag == LEAF) {
+        if (b->right->tag == LEAF) {
+          free(b->left);
+          free(b->right);
+          free(t);
           return newleaf();
-        } else /* b.right->tag == BRANCH*/ {
-          return b.right;
+        } else /* b->right->tag == BRANCH*/ {
+          struct tree *right = b->right;
+          free(b->left);
+          free(t);
+          return right;
         }
-      } else /* b.left->tag == BRANCH*/ {
-        if (b.right->tag == LEAF) {
-          return b.left;
-        } else /* b.right->tag == BRANCH*/ {
-          int m = min(b.right);
-          struct tree *newRight = delete_aux(b.right, m);
-          t->dat.br.value = m;
-          t->dat.br.right = newRight;
+      } else /* b->left->tag == BRANCH*/ {
+        if (b->right->tag == LEAF) {
+          struct tree *left = b->left;
+          free(b->right);
+          free(t);
+          return left;
+        } else /* b->right->tag == BRANCH*/ {
+          int m = min(b->right);
+          struct tree *newRight = delete_aux(b->right, m);
+          b->value = m;
+          b->right = newRight;
           return t;
         }
       }
-    } else if (n < b.value) {
-      struct tree *newLeft = delete_aux(b.left, n);
-      t->dat.br.left = newLeft;
+    } else if (n < b->value) {
+      struct tree *newLeft = delete_aux(b->left, n);
+      b->left = newLeft;
       return t;
-    } else /* n > b.value */ {
-      struct tree *newRight = delete_aux(b.right, n);
-      t->dat.br.left = newRight;
+    } else /* n > b->value */ {
+      struct tree *newRight = delete_aux(b->right, n);
+      b->left = newRight;
       return t;
     }
   }
+}
+
+void free_tree(struct tree *t) {
+  if (t->tag == LEAF) {
+    free(t);
+  } else /* t->tag == BRANCH */ {
+    struct branch *b = &(t->dat.br);
+    free_tree(b->left);
+    free_tree(b->right);
+    free(t);
+  }
+  return;
 }
 
 // Functions to delegate to recursive functions
@@ -151,6 +173,13 @@ void delete(struct root *r, int n) {
   r->t = delete_aux(r->t, n);
   return;
 }
+
+void free_root(struct root *r) {
+  free_tree(r->t);
+  free(r);
+  return;
+}
+
 
 int main(void) {
   struct tree *t1 = newbranch(newleaf(), 10, newleaf());
@@ -175,5 +204,6 @@ int main(void) {
   printf("test 4: %d\n", test4);
   printf("test 5: %d\n", test5);
   printf("test 6: %d\n", test6);
+  free_root(r);
   return 0;
 }
