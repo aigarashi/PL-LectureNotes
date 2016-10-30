@@ -35,10 +35,10 @@
 
 |回数|日付| 内容(予定) | 資料 | 宿題 |
 |----|----|-----------|------|------|
-|1   |10/3|           | [00-introduction.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/00-introduction.html)  |      |
-|2   |10/17|           | [01-bst-java.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/01-bst-java.html)  |      |
-|3   |10/24|           |      |      |
-|4   |10/31|           |      |      |
+|1   |10/3| 概要・2分探索木の復習 | [00-introduction.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/00-introduction.html)  |      |
+|2   |10/17| 2分探索木 in Java (1) | [01-bst-java.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/01-bst-java.html), [02-java-basics.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/02-java-basics.html)  |      |
+|3   |10/24| 2分探索木 in Java (2) | [03-bst-java-vars.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/03-bst-java-vars.html)     |     | 
+|4   |10/31| OCaml の概要 | [04-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/04-ocaml.html)     |      |
 |5   |11/7|            |      |      |
 |6   |11/14|          |      |      |
 |7   |11/28|           |      |      |
