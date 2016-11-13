@@ -40,8 +40,8 @@
 |2   |10/17| 2分探索木 in Java (1) | [01-bst-java.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/01-bst-java.html), [02-java-basics.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/02-java-basics.html)  |      |
 |3   |10/24| 2分探索木 in Java (2) | [03-bst-java-vars.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/03-bst-java-vars.html)     |     | 
 |4   |10/31| OCaml の概要 | [04-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/04-ocaml.html)     |      |
-|5   |11/7|            |      |      |
-|6   |11/14|          |      |      |
+|5   |11/7| OCaml の概要(2), 2分探索木 in OCaml (1) | [05-bst-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/05-bst-ocaml.html)     |      |
+|6   |11/14| OCaml の概要(3), 2分探索木 in OCaml (2) |      |      |
 |7   |11/28|           |      |      |
 |8   |12/5|            |      |      |
 |9   |12/12|          |      |      |
