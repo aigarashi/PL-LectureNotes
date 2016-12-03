@@ -14,6 +14,7 @@ int main(void) {
 
   printf("pp1 at %p points to a point (%d, %d)\n", pp1, p1.x, p1.y);
   printf("pp2 at %p points to a point (%d, %d)\n", pp2, p2.x, p2.y);
+  printf("their sizes are %zd\n", sizeof(struct point));
 
   (*pp1).x = 900;   // parentheses needed
   pp2->y = 200;     // abbreviation for (*pp2).y
@@ -22,6 +23,7 @@ int main(void) {
   printf("pp2 at %p points to a point (%d, %d)\n", pp2, p2.x, p2.y);
 
   int *p = &pp1->y;  // p points to a middle of the object named p2
+  // it could be: int *p = &p1.y
 
   printf("p at %p points to %d\n", p, *p);
 
@@ -37,6 +39,8 @@ int main(void) {
   // correctly aligned.  In this case, p points to the member x.
   p = (int *)pp2;   // Same as: p = &pp2->x;
 
+  printf("p at %p points to %d\n", p, *p);
+
   // y is the next member, and so the following assignment will update
   // p2.y.  (It's not recommended, though -- in general, members x and
   // y may or may not be allocated to contiguous regions (when they
@@ -47,6 +51,9 @@ int main(void) {
   printf("pp1 at %p points to a point (%d, %d)\n", pp1, p1.x, p1.y);
   printf("pp2 at %p points to a point (%d, %d)\n", pp2, p2.x, p2.y);
 
+  p = &pp2->y;
+  struct point *pp3 = (struct foo *)p;
+  printf("pp3 at %p points to a point (%d, %d)\n", pp3, pp3->x, pp3->y);
 
   return 0;
 }
