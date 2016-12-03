@@ -27,6 +27,7 @@ int main(void){
   union foo f;
   f.i = 0x12345678;
 
+  printf("The size of f is %zd\n", sizeof(union foo));
   printf("f as integer is %d (decimal) and 0x%x (hexadecimal)\n", f.i, f.i);
 
   printf("f's first byte is %hhd; second is %hhd; third is %hhd\n",
