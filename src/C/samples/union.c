@@ -5,7 +5,7 @@ struct triplechar {
   char snd;
   char trd;
 };
-  
+
 union foo {
   int i;
   struct triplechar ch;
@@ -28,7 +28,7 @@ int main(void){
   f.i = 0x12345678;
 
   printf("f as integer is %d (decimal) and 0x%x (hexadecimal)\n", f.i, f.i);
-  
+
   printf("f's first byte is %hhd; second is %hhd; third is %hhd\n",
          f.ch.fst, f.ch.snd, f.ch.trd);
 

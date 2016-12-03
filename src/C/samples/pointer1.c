@@ -12,7 +12,7 @@ int main(void) {
 
   printf("px and py are allocated at %p and %p\n", &px, &py);
   printf("their sizes are %zd\n", sizeof(int *));
-  
+
   printf("the value of *px is %d\n", *px);
   x = 300;
   printf("the value of *px is %d\n", *px);

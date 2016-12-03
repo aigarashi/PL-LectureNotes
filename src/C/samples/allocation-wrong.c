@@ -9,7 +9,7 @@ struct foo new_foo(int x) {
   int y = x;
   struct foo res = {x, &y};
   printf("wrong:    y's address is %p and its contents are %d\n", &y, y);
-  
+
   return res;  // the object for y will be deallocated at this point.
 }
 

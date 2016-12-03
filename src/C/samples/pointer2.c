@@ -17,7 +17,7 @@ int main(void) {
 
   (*pp1).x = 900;   // parentheses needed
   pp2->y = 200;     // abbreviation for (*pp2).y
-  
+
   printf("pp1 at %p points to a point (%d, %d)\n", pp1, p1.x, p1.y);
   printf("pp2 at %p points to a point (%d, %d)\n", pp2, p2.x, p2.y);
 
@@ -28,14 +28,13 @@ int main(void) {
   (*p)++;   // equivalent to *p = *p + 1;  incrementing the content of p
             // Do not confuse with *p++;, which is equal to *(p++);.
             // It increments p, read the value pointed to by p, and discards.
-  
+
   printf("pp1 at %p points to a point (%d, %d)\n", pp1, p1.x, p1.y);
   printf("pp2 at %p points to a point (%d, %d)\n", pp2, p2.x, p2.y);
 
   // It's OK to assign a pointer to a different type with explicit
   // type conversion (called casts), if the resulting pointer is
   // correctly aligned.  In this case, p points to the member x.
-  
   p = (int *)pp2;   // Same as: p = &pp2->x;
 
   // y is the next member, and so the following assignment will update

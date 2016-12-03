@@ -9,7 +9,7 @@ struct foo {
 struct foo new_foo(int x) {
   int *p = (int *)malloc(sizeof(int));
   *p = x;
-  
+
   struct foo res = {x, p};
   printf("correct:  p's address is %p and its contents are %d\n", p, *p);
 
