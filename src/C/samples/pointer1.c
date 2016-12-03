@@ -20,6 +20,7 @@ int main(void) {
   *px = *px + 1;  // reads (*px) + 1
   printf("the value of x is %d\n", x);
 
+  // The following assignments lead to undefined behavior
   *py = *(py + 1) + 5;   // py + 1 points to the integer "next" to y
   printf("px at %p points to x (%d)\n", px, x);
   printf("py at %p points to y (%d)\n", py, y);
