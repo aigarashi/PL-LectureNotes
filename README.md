@@ -44,7 +44,7 @@
 |5   |11/7| OCaml の概要(2), 2分探索木 in OCaml (1) | [05-bst-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/05-bst-ocaml.html)     |      |
 |6   |11/14| OCaml の概要(3), 2分探索木 in OCaml (2) |      |      |
 |7   |11/28| C言語の概要(1) | [06-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/06-C.html)     |      |
-|8   |12/5|            |      |      |
+|8   |12/5| C言語の概要(2), 2分探索木 in C  | [07-bst-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/07-bst-C.html)    |      |
 |9   |12/12|          |      |      |
 |10  |12/19|           |      |      |
 |11  |12/26!?|           |      |      |
