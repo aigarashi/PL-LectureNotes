@@ -13,6 +13,7 @@
 
 ## お知らせ
 
+* 1/4を休講として 1/10(火)5限に補講をします．場所はいつもと同じ情報1です．なお，この日は1/13(金)の一部の講義の振替えにもなっていますので，気をつけてください．(2016.12.6)
 * [課題1](https://github.com/ProgrammingLanguages2016AtKUEng/kadai1)を出します．締切は 12/2(金) です．説明は明日の講義で行います．(2016.11.13)
 * OCaml，C言語の開発環境構築について資料を追加 (2016.10.26)
 * 2016年度ページたちあげ (2016.9.17)
@@ -44,11 +45,11 @@
 |5   |11/7| OCaml の概要(2), 2分探索木 in OCaml (1) | [05-bst-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/05-bst-ocaml.html)     |      |
 |6   |11/14| OCaml の概要(3), 2分探索木 in OCaml (2) |      |      |
 |7   |11/28| C言語の概要(1) | [06-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/06-C.html)     |      |
-|8   |12/5| C言語の概要(2), 2分探索木 in C  | [07-bst-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/07-bst-C.html)    |      |
-|9   |12/12|          |      |      |
+|8   |12/5| C言語の概要(2) |    |      |
+|9   |12/12|  2分探索木 in C  |[07-bst-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/07-bst-C.html)|      |
 |10  |12/19|           |      |      |
 |11  |12/26!?|           |      |      |
-|12  |1/4!?|          |      |      |
+|12  |1/10 (5限，補講)|          |      |      |
 |13  |1/16| (休講予定) |      |      |
 |14  |1/23|           |      |      |
 |15  |1/30|           |      |      |
