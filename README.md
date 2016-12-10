@@ -71,7 +71,8 @@
 
 ### 環境設定
 
-* [OCaml, C 開発環境について](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/setup.html)
+* [OCaml, C 開発環境のセットアップ](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/setup.html)
+* [OCaml, C 開発環境の利用法](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/usage.html)
 
 -----------
 Copyright 五十嵐 淳 (pl16@fos.kuis.kyoto-u.ac.jp), 2016 
