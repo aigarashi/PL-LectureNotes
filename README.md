@@ -49,9 +49,9 @@
 |8   |12/5| C言語の概要(2) |    |      |
 |9   |12/12| 2分探索木 in C, プログラミング言語の構文論  |[07-bst-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/07-bst-C.html), [08-language-syntax.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/08-language-syntax.html)|      |
 |10  |12/19| プログラミング言語の構文論 | [08-language-syntax.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/08-language-syntax.html)|      |
-|11  |12/26|           |      |      |
+|11  |12/26| 再帰と繰り返し | [09-rec-iter.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/09-rec-iter.html) |      |
 |12  |1/10 (5限，補講)|          |      |      |
-|13  |1/16| (休講予定) |      |      |
+|13  |1/16|           |      |      |
 |14  |1/23|           |      |      |
 |15  |1/30|           |      |      |
 |    |2/6?|試験      |      |      |
