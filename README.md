@@ -13,6 +13,7 @@
 
 ## お知らせ
 
+* [課題1の講評](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/kadai1-review.html)をＴＡの矢杉君に書いてもらいました．今後に生かしてください．(2016.12.31)
 * [課題2](https://github.com/ProgrammingLanguages2016AtKUEng/kadai2)を出します．締切は 1/9(月) です．説明は明日の講義で行います．(2016.12.11)
 * 1/4を休講として 1/10(火)5限に補講をします．場所はいつもと同じ情報1です．なお，この日は1/13(金)の一部の講義の振替えにもなっていますので，気をつけてください．(2016.12.6)
 * [課題1](https://github.com/ProgrammingLanguages2016AtKUEng/kadai1)を出します．締切は 12/2(金) です．説明は明日の講義で行います．(2016.11.13)
