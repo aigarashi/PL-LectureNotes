@@ -11,7 +11,7 @@ public class Branch implements BinarySearchTree {
     private BinarySearchTree right;
 
     /**
-     * Constructor for objects of class Leaf
+     * Constructor for objects of class Branch
      */
     public Branch(BinarySearchTree left, int v, BinarySearchTree right) {
         this.left = left;
