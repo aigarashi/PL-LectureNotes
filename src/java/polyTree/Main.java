@@ -31,5 +31,31 @@ public class Main {
         System.out.println(t8);
         System.out.println("The size of t8 is " + t8.size());
         System.out.println("The depth of t8 is " + t8.depth());
+
+        // Let's construct a tree holding strings
+        Tree<String> t11 = new Branch<String>(new Leaf<String>(),
+                                             "I",
+                                             new Leaf<String>());
+        Tree<String> t12 = new Branch<String>(new Leaf<String>(),
+                                             "Love",
+                                             new Leaf<String>());
+        Tree<String> t13 = new Branch<String>(t11, "Java", t12);
+        Tree<String> t14 = new Branch<String>(new Leaf<String>(), "How", new Leaf<String>());
+        Tree<String> t15 = new Branch<String>(new Leaf<String>(), "about", t14);
+        Tree<String> t16 = new Branch<String>(t13, "you?", t15);
+
+        System.out.println(t16);
+        System.out.println("The size of t16 is " + t16.size());
+        System.out.println("The depth of t16 is " + t16.depth());
+
+        Tree<String> t17 = t16.reflect();
+        System.out.println(t17);
+        System.out.println("The size of t17 is " + t17.size());
+        System.out.println("The depth of t17 is " + t17.depth());
+
+        Tree<String> t18 = t16.add("Me, too");
+        System.out.println(t18);
+        System.out.println("The size of t18 is " + t18.size());
+        System.out.println("The depth of t18 is " + t18.depth());
     }
 }
