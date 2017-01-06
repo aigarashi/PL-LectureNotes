@@ -84,6 +84,7 @@ struct tree *add(struct tree *t, void *e) {
   }
 }
 
+// Functions whose behavior depends on the element type have to be defined separately
 void print_inttree(struct tree *t) {
   if (t->tag == LEAF) {
     printf("Lf");
@@ -188,5 +189,3 @@ int main(void) {
   return 0;
 }
 
-  
-  
