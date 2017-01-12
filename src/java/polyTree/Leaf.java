@@ -4,7 +4,7 @@
  * @version 20170105
  * 
  */
-public class Leaf<E> implements Tree<E> {
+public class Leaf<Elm> implements Tree<Elm> {
     // no instance variables
 
     /**
@@ -33,15 +33,15 @@ public class Leaf<E> implements Tree<E> {
      * 
      * @return      
      */
-    public Tree<E> reflect() { return new Leaf<E>(); }
+    public Tree<Elm> reflect() { return new Leaf<Elm>(); }
 
     /**
      * A method to add a new element to the tree
      * 
      * @return      
      */
-    public Tree<E> add(E e) {
-        return new Branch<E>(new Leaf<E>(), e, new Leaf<E>());
+    public Tree<Elm> add(E e) {
+        return new Branch<Elm>(new Leaf<Elm>(), e, new Leaf<Elm>());
     }
 
     /**

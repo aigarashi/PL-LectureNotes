@@ -4,16 +4,16 @@
  * @version 20170105
  * 
  */
-public class Branch<E> implements Tree<E> {
+public class Branch<Elm> implements Tree<Elm> {
     // instance variables to hold an element of type E and subtrees
-    private Tree<E> left;
+    private Tree<Elm> left;
     private E v;  // standing for a value
-    private Tree<E> right;
+    private Tree<Elm> right;
 
     /**
      * Constructor for objects of class Branch
      */
-    public Branch(Tree<E> left, E v, Tree<E> right) {
+    public Branch(Tree<Elm> left, E v, Tree<Elm> right) {
         this.left = left;
         this.v = v;
         this.right = right;
@@ -38,8 +38,8 @@ public class Branch<E> implements Tree<E> {
      * 
      * @return      
      */
-    public Tree<E> reflect() {
-        return new Branch<E>(right.reflect(), v, left.reflect());
+    public Tree<Elm> reflect() {
+        return new Branch<Elm>(right.reflect(), v, left.reflect());
     }
 
     /**
@@ -47,8 +47,8 @@ public class Branch<E> implements Tree<E> {
      * 
      * @return      
      */
-    public Tree<E> add(E e) {
-        return new Branch<E>(left.add(e), v, right);
+    public Tree<Elm> add(E e) {
+        return new Branch<Elm>(left.add(e), v, right);
     }
 
     /**

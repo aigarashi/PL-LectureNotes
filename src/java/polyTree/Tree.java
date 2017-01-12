@@ -6,7 +6,7 @@
  * @version 20170105
  * 
  */
-public interface Tree<E> {
+public interface Tree<Elm> {
     /**
      * A method to compute the size of the tree.  The size of a tree
      * is defined to be the number of branches in the tree.
@@ -29,14 +29,14 @@ public interface Tree<E> {
      * 
      * @return      
      */
-    Tree<E> reflect();
+    Tree<Elm> reflect();
 
     /**
      * A method to add a new element to the tree
      * 
      * @return      
      */
-    Tree<E> add(E e);
+    Tree<Elm> add(Elm e);
 
     /**
      * A method to convert to a string
