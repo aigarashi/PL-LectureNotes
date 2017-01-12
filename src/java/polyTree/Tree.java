@@ -22,19 +22,19 @@ public interface Tree<Elm> {
      * 
      * @return      the depth of the tree
      */
-    int depth();    
+    int depth();
 
     /**
      * A method to compute the mirror image of the tree
      * 
-     * @return      
+     * @return the mirror image of the tree
      */
     Tree<Elm> reflect();
 
     /**
      * A method to add a new element to the tree
      * 
-     * @return      
+     * @return a new tree with a new element
      */
     Tree<Elm> add(Elm e);
 

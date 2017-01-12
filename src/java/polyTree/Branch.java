@@ -58,5 +58,5 @@ public class Branch<Elm> implements Tree<Elm> {
      */
     public String toString() {
         return "Br(" + left + ", " + v + ", " + right + ")";
-    };
+    }
 }

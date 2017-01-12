@@ -51,5 +51,5 @@ public class Leaf<Elm> implements Tree<Elm> {
      */
     public String toString() {
         return "Lf";
-    };
+    }
 }
