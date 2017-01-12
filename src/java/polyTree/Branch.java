@@ -5,15 +5,15 @@
  * 
  */
 public class Branch<Elm> implements Tree<Elm> {
-    // instance variables to hold an element of type E and subtrees
+    // instance variables to hold an element of type Elm and subtrees
     private Tree<Elm> left;
-    private E v;  // standing for a value
+    private Elm v;  // standing for a value
     private Tree<Elm> right;
 
     /**
      * Constructor for objects of class Branch
      */
-    public Branch(Tree<Elm> left, E v, Tree<Elm> right) {
+    public Branch(Tree<Elm> left, Elm v, Tree<Elm> right) {
         this.left = left;
         this.v = v;
         this.right = right;
@@ -47,7 +47,7 @@ public class Branch<Elm> implements Tree<Elm> {
      * 
      * @return      
      */
-    public Tree<Elm> add(E e) {
+    public Tree<Elm> add(Elm e) {
         return new Branch<Elm>(left.add(e), v, right);
     }
 
