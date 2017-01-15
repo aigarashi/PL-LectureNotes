@@ -87,11 +87,11 @@ struct tree *add(struct tree *t, void *e) {
 // Functions whose behavior depends on the element type have to be defined separately
 void print_inttree(struct tree *t) {
   if (t->tag == LEAF) {
-    printf("Lf");
+    printf("leaf");
   } else /* t->tag == BRANCH */ {
     struct branch *b = &t->dat.br;
     int *v = (int *)b->value;
-    printf("Br(");
+    printf("branch(");
     print_inttree(b->left);
     printf(", %d, ", *v);
     print_inttree(b->right);
@@ -102,11 +102,11 @@ void print_inttree(struct tree *t) {
 
 void print_doubletree(struct tree *t) {
   if (t->tag == LEAF) {
-    printf("Lf");
+    printf("leaf");
   } else /* t->tag == BRANCH */ {
     struct branch *b = &t->dat.br;
     double *v = (double *)b->value;
-    printf("Br(");
+    printf("branch(");
     print_doubletree(b->left);
     printf(", %f, ", *v);
     print_doubletree(b->right);
