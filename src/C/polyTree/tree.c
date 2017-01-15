@@ -20,10 +20,6 @@ struct tree {
   } dat;
 };
 
-int max(int a, int b) {
-  return (a>b)?a:b;   // equivalent to "if a > b then a else b" in OCaml
-}
-
 struct tree *newbranch(struct tree *left, void *value, struct tree *right) {
   // Allocate a new object in the heap
   struct tree *n = (struct tree *)malloc(sizeof(struct tree));
@@ -50,6 +46,10 @@ int size(struct tree *t) {
     int s2 = size(b->right);
     return s1 + s2 + 1;
   }
+}
+
+int max(int a, int b) {
+  return (a>b)?a:b;   // equivalent to "if a > b then a else b" in OCaml
 }
 
 int depth(struct tree *t) {
