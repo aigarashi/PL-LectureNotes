@@ -40,7 +40,7 @@ public class Leaf<Elm> implements Tree<Elm> {
      * 
      * @return      
      */
-    public Tree<Elm> add(E e) {
+    public Tree<Elm> add(Elm e) {
         return new Branch<Elm>(new Leaf<Elm>(), e, new Leaf<Elm>());
     }
 
@@ -50,6 +50,6 @@ public class Leaf<Elm> implements Tree<Elm> {
      * @return      the string representation of a tree
      */
     public String toString() {
-        return "Lf";
+        return "leaf";
     }
 }
