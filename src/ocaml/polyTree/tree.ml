@@ -1,12 +1,12 @@
 (* Works only in OCaml 4.03.0 or above *)
 
 (* Defining the shape of trees *)
-type 'a tree =
+type 'elm tree =
     Lf       (* Leaf *)
   | Br of {  (* Branch *)
-      left:  'a tree;
-      value: 'a;
-      right: 'a tree;
+      left:  'elm tree;
+      value: 'elm;
+      right: 'elm tree;
     }
 
 let rec size t =
@@ -14,11 +14,13 @@ let rec size t =
     Lf -> 0
   | Br {left=l; value=v; right=r} -> size l + size r + 1
 
-(* the syntax for the call to max is explained later *)
+let max(n, m) =
+  if n < m then m else n
+
 let rec depth t =
   match t with
     Lf -> 0
-  | Br {left=l; value=v; right=r} -> max (depth l) (depth r) + 1
+  | Br {left=l; value=v; right=r} -> max(depth l, depth r) + 1
 
 let rec reflect t =
   match t with
@@ -35,6 +37,19 @@ let rec add(t, e) =
      Br {left = add(l, e);
          value = v;
          right = r}
+
+let rec sum t =
+  match t with
+    Lf -> 0
+  | Br {left=l; value=v; right=r} -> sum l + v + sum r
+
+let rec string_of_int_tree t =
+  match t with
+    Lf -> "leaf"
+  | Br {left=l; value=v; right=r} ->
+      "branch(" ^ string_of_int_tree l ^ ","
+                ^ string_of_int v ^ ","
+                ^ string_of_int_tree r ^ ")"
 
 (* Constructing a sample tree holding integers *)
 let t1 = Br {left = Lf; value = 10; right = Lf}
