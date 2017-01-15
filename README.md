@@ -13,6 +13,7 @@
 
 ## お知らせ
 
+* 既に KULASIS でお知らせしましたが，1/10(火)に予定していた補講は休講となりました．(2017.1.15)
 * [課題1の講評](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/kadai1-review.html)をＴＡの矢杉君に書いてもらいました．今後に生かしてください．(2016.12.31)
 * [課題2](https://github.com/ProgrammingLanguages2016AtKUEng/kadai2)を出します．締切は 1/9(月) です．説明は明日の講義で行います．(2016.12.11)
 * 1/4を休講として 1/10(火)5限に補講をします．場所はいつもと同じ情報1です．なお，この日は1/13(金)の一部の講義の振替えにもなっていますので，気をつけてください．(2016.12.6)
@@ -51,10 +52,9 @@
 |9   |12/12| 2分探索木 in C, プログラミング言語の構文論  |[07-bst-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/07-bst-C.html), [08-language-syntax.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/08-language-syntax.html)|      |
 |10  |12/19| プログラミング言語の構文論 | [08-language-syntax.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/08-language-syntax.html)|      |
 |11  |12/26| 再帰と繰り返し | [09-rec-iter.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/09-rec-iter.html) |      |
-|12  |1/10 (5限，補講)|          |      |      |
-|13  |1/16|           |      |      |
-|14  |1/23|           |      |      |
-|15  |1/30|           |      |      |
+|12  |1/16| 多相性(1)  | [10-polymorphism.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/10-polymorphism.html) |      |
+|13  |1/23|           |      |      |
+|14  |1/30|           |      |      |
 |    |2/6?|試験      |      |      |
 
 講義で紹介するプログラムは(上のファイル一覧にある) src/ 以下で公開するので適宜ダウンロードしてもらいたい．
@@ -78,4 +78,4 @@
 * [OCaml, C 開発環境の利用法](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/usage.html)
 
 -----------
-Copyright 五十嵐 淳 (pl16@fos.kuis.kyoto-u.ac.jp), 2016 
+Copyright 五十嵐 淳 (pl16@fos.kuis.kyoto-u.ac.jp), 2016, 2017
