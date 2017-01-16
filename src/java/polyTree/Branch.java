@@ -24,14 +24,18 @@ public class Branch<Elm> implements Tree<Elm> {
      * 
      * @return      the size of the tree
      */
-    public int size() { return left.size() + right.size() + 1; }
+    public int size() {
+        return left.size() + right.size() + 1;
+    }
 
     /**
      * A method to compute the depth of the tree.
      * 
      * @return      the depth of the tree
      */
-    public int depth() { return Math.max(left.size(), right.size()) + 1; }
+    public int depth() {
+        return Math.max(left.depth(), right.depth()) + 1;
+    }
 
     /**
      * A method to compute the mirror image of the tree
