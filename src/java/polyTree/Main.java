@@ -34,11 +34,11 @@ public class Main {
 
         // Let's construct a tree holding strings
         Tree<String> t11 = new Branch<String>(new Leaf<String>(),
-                                             "I",
-                                             new Leaf<String>());
+                                              "I",
+                                              new Leaf<String>());
         Tree<String> t12 = new Branch<String>(new Leaf<String>(),
-                                             "Love",
-                                             new Leaf<String>());
+                                              "Love",
+                                              new Leaf<String>());
         Tree<String> t13 = new Branch<String>(t11, "Java", t12);
         Tree<String> t14 = new Branch<String>(new Leaf<String>(), "How", new Leaf<String>());
         Tree<String> t15 = new Branch<String>(new Leaf<String>(), "about", t14);
