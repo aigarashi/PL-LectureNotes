@@ -12,7 +12,7 @@ type 'elm tree =
 let rec size t =
   match t with
     Lf -> 0
-  | Br {left=l; value=v; right=r} -> size l + size r + 1
+  | Br {left=l; value=_; right=r} -> size l + size r + 1
 
 let max(n, m) =
   if n < m then m else n
@@ -20,7 +20,7 @@ let max(n, m) =
 let rec depth t =
   match t with
     Lf -> 0
-  | Br {left=l; value=v; right=r} -> max(depth l, depth r) + 1
+  | Br {left=l; value=_; right=r} -> max(depth l, depth r) + 1
 
 let rec reflect t =
   match t with
