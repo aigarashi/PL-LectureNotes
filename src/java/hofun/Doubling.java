@@ -5,7 +5,7 @@
  * @version 20170117
  *
  */
-public class Doubling implements Transform {
+public class Doubling implements IntToInt {
     // no instance variables
 
     public Doubling() {
@@ -18,5 +18,5 @@ public class Doubling implements Transform {
      * @param n an integer
      * @return n * 2
      */
-    public int f(int n) { return n * 2; }
+    public int apply(int n) { return n * 2; }
 }

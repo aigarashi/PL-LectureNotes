@@ -5,7 +5,7 @@
  * @version 20170117
  *
  */
-public class Sum3 implements Transform3 {
+public class Sum3 implements ThreeIntsToInt {
     // no instance variables
 
     public Sum3() {
@@ -18,5 +18,5 @@ public class Sum3 implements Transform3 {
      * @param n, m, p integers
      * @return sum of n, m, and p
      */
-    public int f(int n, int m, int p) { return n + m + p; }
+    public int apply(int n, int m, int p) { return n + m + p; }
 }

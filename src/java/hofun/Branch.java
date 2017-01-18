@@ -24,10 +24,10 @@ public class Branch implements Tree {
      * 
      * @return      a new tree obtained by applying t to values
      */
-    public Tree map(Transform t) {
-        Tree newLeft = left.map(t);
-        Tree newRight = right.map(t);
-        int newVal = t.f(v);
+    public Tree map(IntToInt f) {
+        Tree newLeft = left.map(f);
+        Tree newRight = right.map(f);
+        int newVal = f.apply(v);
         return new Branch(newLeft, newVal, newRight);
     }
 
@@ -37,10 +37,10 @@ public class Branch implements Tree {
      * @param r  represents how leaves and branches are replaced
      * @return  an integer
      */
-    public int fold(int lf, Transform3 br) {
-        int l = left.fold(lf, br);
-        int r = right.fold(lf, br);
-        return br.f(l, v, r);
+    public int fold(int e, ThreeIntsToInt f) {
+        int l = left.fold(e, f);
+        int r = right.fold(e, f);
+        return f.apply(l, v, r);
     }
     
     /**

@@ -5,11 +5,11 @@
  * @version 20170117
  *
  */
-public interface Transform {
+public interface IntToInt {
     /**
      * A method representing a function from integers to integers
      *
      * @return an integer
      */
-    int f(int x);
+    int apply(int x);
 }

@@ -19,7 +19,7 @@ public class Leaf implements Tree {
      * 
      * @return      a new tree obtained by applying t to values
      */
-    public Tree map(Transform t) {
+    public Tree map(IntToInt t) {
         return new Leaf();
     }
 
@@ -29,8 +29,8 @@ public class Leaf implements Tree {
      * @param r  represents how leaves and branches are replaced
      * @return  an integer
      */
-    public int fold(int lf, Transform3 br) {
-        return lf;
+    public int fold(int e, ThreeIntsToInt f) {
+        return e;
     }
     
     /**
