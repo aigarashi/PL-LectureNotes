@@ -137,7 +137,7 @@ struct tree *delete(struct tree *t, int n) {
       return t;
     } else /* n > b->value */ {
       struct tree *newRight = delete(b->right, n);
-      b->left = newRight;
+      b->right = newRight;
       return t;
     }
   }
