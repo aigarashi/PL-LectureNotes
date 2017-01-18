@@ -9,6 +9,8 @@ int sigma(int f(int), int n) {
   /* Typical textbooks uses notation like "int (*f)(int)" to declare a
      parameter for function pointers.  Likewise, they use "(*f)(0)" to
      call a function through a pointer.
+
+     See (item (8) in) 6.7.5.3 and (item (4) in) 6.3.2.1.  
   */
 
   if (n < 1) {
