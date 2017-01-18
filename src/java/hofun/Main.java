@@ -16,7 +16,7 @@ public class Main {
         System.out.println(t6);
         System.out.println(t6.fold(0, new Sum3()));
 
-        Tree t7 = t6.map(new Doubling());
+        Tree t7 = t6.map(new Dbl());
         System.out.println(t7);
 
         // Another way of folding a tree: pass one object representing
