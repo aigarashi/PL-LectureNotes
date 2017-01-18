@@ -83,12 +83,12 @@ let test7 = find t9 48
 let t11 = Br {left = Lf; value = "I"; right = Lf}
 let t12 = Br {left = Lf; value = "love"; right = Lf}
 let t13 = Br {left = t11; value = "OCaml"; right = t12}
-let t14 = Br {left = Lf; value = "How"; right = Lf}
-let t15 = Br {left = Lf; value = "about"; right = t14}
-let t16 = Br {left = t13; value = "you?"; right = t15}
+let t14 = Br {left = Lf; value = "you"; right = Lf}
+let t15 = Br {left = Lf; value = "think"; right = t14}
+let t16 = Br {left = t13; value = "so?"; right = t15}
 
 (* Testing find *)
-let test11 = find t16 "you?"  (* should be true *)
+let test11 = find t16 "so?"  (* should be true *)
 let test12 = find t16 "Ocaml"  (* should be false *)
 
 (* Testing insert *)
@@ -100,5 +100,5 @@ let test15 = find t18 "Me"  (* should return false *)
 
 (* Testing delete *)
 let t19 = delete t18 "Why"
-let test16 = find t19 "Why"
-let test17 = find t19 "She"
+let test16 = find t19 "Why" (* should return false *)
+let test17 = find t19 "She" (* should return false *)
