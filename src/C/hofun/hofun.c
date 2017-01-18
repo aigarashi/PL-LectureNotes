@@ -12,9 +12,9 @@ int sigma(int f(int), int n) {
   */
 
   if (n < 1) {
-    return (*f)(0);
+    return f(0);
   } else {
-    return (*f)(n) + sigma(f, n - 1);
+    return f(n) + sigma(f, n - 1);
   }
 }
 
