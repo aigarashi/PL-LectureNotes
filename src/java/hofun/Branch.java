@@ -44,6 +44,18 @@ public class Branch implements Tree {
     }
     
     /**
+     * Another method for folding a tree with one object
+     *
+     * @param c  represents a pair of functions
+     * @return   an integer
+     */
+    public int fold(CaseForTree c) {
+        int l = left.fold(c);
+        int r = right.fold(c);
+        return c.caseBranch(l, v, r);
+    }
+
+    /**
      * A method to convert to a string
      *
      * @return      the string representation of a tree

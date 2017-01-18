@@ -18,10 +18,15 @@ public class Main {
 
         Tree t7 = t6.map(new Doubling());
         System.out.println(t7);
-        System.out.println(t7.fold(0, new Sum3()));
 
-        // Or, use anonymous functions (called Lambdas) introduced into Java 8
-        ThreeIntsToInt f = (a, b, c) -> a + b + c;
+        // Another way of folding a tree: pass one object representing
+        // two functions
+        CaseForTree c = new SumTree();
+        System.out.println(t7.fold(c));
+
+        // Or, use anonymous functions (called Lambdas) introduced
+        // into Java 8
+        ThreeIntsToInt f = (n, m, p) -> n + m + p;
         System.out.println(t6.fold(0, f));
 
         Tree t8 = t6.map(n -> n * 2);

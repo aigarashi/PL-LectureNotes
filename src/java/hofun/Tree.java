@@ -23,7 +23,15 @@ public interface Tree {
      * @return  an integer
      */
     int fold(int e, ThreeIntsToInt f);
-             
+
+    /**
+     * Another method for folding a tree with one object
+     *
+     * @param c represents a pair of functions
+     * @return  an integer
+     */
+    int fold(CaseForTree c);
+
     /**
      * A method to convert to a string
      *
