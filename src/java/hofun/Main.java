@@ -30,7 +30,7 @@ public class Main {
         System.out.println(t6.fold(0, f));
 
         Tree t8 = t6.map(n -> n * 2);
-        System.out.println(t7);
-        System.out.println(t7.fold(0, f));
+        System.out.println(t8);
+        System.out.println(t8.fold(0, f));
     }
 }
