@@ -71,6 +71,7 @@ let t7 = treemap (fun n -> n * 2) t6
 let s6 = treefold 0 (fun l v r -> l + v + r) t6
 let s7 = treefold 0 (fun l v r -> l + v + r) t7
 
+(* Conversion to a string can be written in terms of fold *)
 let str6 = treefold "leaf" (fun l v r -> "branch(" ^ l ^ ", " ^ (string_of_int v) ^ ", " ^ r ^ ")") t6
 let str7 = treefold "leaf" (fun l v r -> "branch(" ^ l ^ ", " ^ (string_of_int v) ^ ", " ^ r ^ ")") t7
                   
