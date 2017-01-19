@@ -22,8 +22,11 @@ int cube(int n) {
 }
 
 int main(void) {
-  printf("1^2 + ... + 20^2 = %d\n", sigma(&square, 20));
-  printf("1^3 + ... + 20^3 = %d\n", sigma(&cube, 20));
+  /* What is passed to a function is always a pointer to a function.
+     For convenience, the & operator doesn't have to be applied
+     explicitly. */
+  printf("1^2 + ... + 20^2 = %d\n", sigma(square, 20));
+  printf("1^3 + ... + 20^3 = %d\n", sigma(cube, 20));
   
   return 0;
 }
