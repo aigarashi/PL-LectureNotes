@@ -92,12 +92,12 @@ int main(void) {
   struct tree *t6 = newbranch(t3, 30, t5);
 
   print_tree(t6); printf("\n");
-  int s6 = fold(0, &add3, t6);
+  int s6 = fold(0, add3, t6);
   printf("the sum of integers in t6 is %d\n", s6);
 
-  struct tree *t7 = map(&dbl, t6);
+  struct tree *t7 = map(dbl, t6);
   print_tree(t7); printf("\n");
-  int s7 = fold(0, &add3, t7);
+  int s7 = fold(0, add3, t7);
   printf("the sum of integers in t7 is %d\n", s7);
 
   return 0;
