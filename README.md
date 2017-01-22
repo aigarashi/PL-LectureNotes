@@ -53,9 +53,9 @@
 |10  |12/19| プログラミング言語の構文論 | [08-language-syntax.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/08-language-syntax.html)|      |
 |11  |12/26| 再帰と繰り返し | [09-rec-iter.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/09-rec-iter.html) |      |
 |12  |1/16| 多相性(1)  | [10-polymorphism.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/10-polymorphism.html) |      |
-|13  |1/23|           |      |      |
-|14  |1/30|           |      |      |
-|    |2/6?|試験      |      |      |
+|13  |1/23| 高階関数   | [11-hofuns.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/11-hofuns.html) |      |
+|14  |1/30| 多相性と高階関数，試験について  |      |      |
+|    |2/6|試験      |      |      |
 
 講義で紹介するプログラムは(上のファイル一覧にある) src/ 以下で公開するので適宜ダウンロードしてもらいたい．
 
