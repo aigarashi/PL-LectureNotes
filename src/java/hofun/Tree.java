@@ -8,12 +8,12 @@
  */
 public interface Tree {
     /**
-     * A method to transform each value by some transformation t
+     * A method to transform each value by function f
      *
-     * @param t  transformation (function) for values held at branches 
+     * @param f     function to transform integers held at branches 
      * @return      a new tree obtained by applying t to values
      */
-    Tree map(IntToInt t);
+    Tree map(IntToInt f);
 
     /**
      * A method for folding a tree with two operators
@@ -23,7 +23,15 @@ public interface Tree {
      * @return  an integer
      */
     int fold(int e, ThreeIntsToInt f);
-             
+
+    /**
+     * Another method for folding a tree with one object
+     *
+     * @param c represents a pair of functions
+     * @return  an integer
+     */
+    int fold(CaseForTree c);
+
     /**
      * A method to convert to a string
      *

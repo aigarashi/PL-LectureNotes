@@ -5,10 +5,10 @@
  * @version 20170117
  *
  */
-public class Doubling implements IntToInt {
+public class Dbl implements IntToInt {
     // no instance variables
 
-    public Doubling() {
+    public Dbl() {
         // nothing to initialize
     }
 

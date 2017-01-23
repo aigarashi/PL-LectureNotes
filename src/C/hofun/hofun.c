@@ -5,18 +5,11 @@
 
 #include <stdio.h>   // for printf
 
-int sigma(int f(int), int n) {
-  /* Typical textbooks uses notation like "int (*f)(int)" to declare a
-     parameter for function pointers.  Likewise, they use "(*f)(0)" to
-     call a function through a pointer.
-
-     See (item (8) in) 6.7.5.3 and (item (4) in) 6.3.2.1.  
-  */
-
+int sigma(int (*f)(int), int n) {
   if (n < 1) {
-    return f(0);
+    return (*f)(0);
   } else {
-    return f(n) + sigma(f, n - 1);
+    return (*f)(n) + sigma(f, n - 1);
   }
 }
 
@@ -29,6 +22,9 @@ int cube(int n) {
 }
 
 int main(void) {
+  /* What is passed to a function is always a pointer to a function.
+     For convenience, the & operator doesn't have to be applied
+     explicitly. */
   printf("1^2 + ... + 20^2 = %d\n", sigma(square, 20));
   printf("1^3 + ... + 20^3 = %d\n", sigma(cube, 20));
   

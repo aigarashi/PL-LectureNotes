@@ -20,8 +20,9 @@ public class Branch implements Tree {
     }
 
     /**
-     * A method to transform each value by some transformation t
-     * 
+     * A method to transform each value by function f
+     *
+     * @param f     function to transform integers held at branches 
      * @return      a new tree obtained by applying t to values
      */
     public Tree map(IntToInt f) {
@@ -43,6 +44,18 @@ public class Branch implements Tree {
         return f.apply(l, v, r);
     }
     
+    /**
+     * Another method for folding a tree with one object
+     *
+     * @param c  represents a pair of functions
+     * @return   an integer
+     */
+    public int fold(CaseForTree c) {
+        int l = left.fold(c);
+        int r = right.fold(c);
+        return c.caseBranch(l, v, r);
+    }
+
     /**
      * A method to convert to a string
      *

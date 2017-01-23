@@ -51,7 +51,7 @@ void print_tree(struct tree *t) {
   return;
 }
 
-struct tree *map(int f(int), struct tree *t) {
+struct tree *map(int (*f)(int), struct tree *t) {
   if (t->tag == LEAF) {
     return newleaf();
   } else /* t->tag == BRANCH */ {
@@ -63,7 +63,7 @@ struct tree *map(int f(int), struct tree *t) {
   }
 }
 
-int fold(int e, int f(int, int, int), struct tree *t) {
+int fold(int e, int (*f)(int, int, int), struct tree *t) {
   if (t->tag == LEAF) {
     return e;
   } else /* t->tag == BRANCH */ {
