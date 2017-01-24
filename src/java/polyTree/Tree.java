@@ -6,6 +6,8 @@
  * @version 20170105
  * 
  */
+import java.util.function.*;
+
 public interface Tree<Elm> {
     /**
      * A method to compute the size of the tree.  The size of a tree
@@ -44,4 +46,22 @@ public interface Tree<Elm> {
      * @return      the string representation of a tree
      */
     String toString();
+
+    /**
+     * A method to transform each value by function f
+     *
+     * @param f     a function from Elm to Elm2
+     * @return      a new tree obtained by applying f to values
+     */
+    <Elm2> Tree<Elm2> map(Function<Elm,Elm2> f);
+
+     /**
+     * A method for folding a tree with two operators e and f
+     *
+     * @param e  represents a Res to replace a leaf
+     * @param f  represents a function to replace a branch 
+     *           f takes Res, Elm and Res and returns Res
+     * @return  a Res-ult
+     */
+    <Res> Res fold(Res e, TriFunction<Res,Elm,Res,Res> f);
 }

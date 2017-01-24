@@ -4,6 +4,8 @@
  * @author Atsushi Igarashi
  * @version 20170105
  */
+import java.util.function.*;
+
 public class Main {
     public static void main(String[] args) {
         Tree<Integer> t1 = new Branch<Integer>(new Leaf<Integer>(),
@@ -57,5 +59,17 @@ public class Main {
         System.out.println(t18);
         System.out.println("The size of t18 is " + t18.size());
         System.out.println("The depth of t18 is " + t18.depth());
+
+        // polymorphic map and fold
+        TriFunction<Integer,String,Integer,Integer> f = (l, v, r) -> l + v.length() + r;
+        // Computes the sum of the lengths of the strings in t18
+        Integer i = t18.fold<Integer>(0, f);  
+        // "<Integer>" above specifies what Res is in this invocation
+        // It can be omitted and written t18.fold(0, f) -- type inference!
+        System.out.println(i);  
+
+        Tree<Integer> t9 = t18.<Integer>map(s -> s.length());
+        System.out.println(t9);
+        System.out.println(t9.fold(0, (l,v,r) -> l + v + r));
     }
 }

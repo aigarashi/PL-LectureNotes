@@ -51,6 +51,22 @@ let rec string_of_int_tree t =
                 ^ string_of_int v ^ ","
                 ^ string_of_int_tree r ^ ")"
 
+let rec treemap f t =
+  match t with
+    Lf -> Lf
+  | Br {left=l; value=v; right=r} ->
+     Br {left = treemap f l;
+         value = f v;
+         right = treemap f r}
+
+let rec treefold e f t =
+  match t with
+    Lf -> e
+  | Br {left=l; value=v; right=r} ->
+     f (treefold e f l)
+       v
+       (treefold e f r)
+                                           
 (* Constructing a sample tree holding integers *)
 let t1 = Br {left = Lf; value = 10; right = Lf}
 let t2 = Br {left = Lf; value = 25; right = Lf}
