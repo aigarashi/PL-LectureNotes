@@ -4,6 +4,8 @@
  * @author Atsushi Igarashi
  * @version 20170105
  */
+import java.util.function.*;
+
 public class Main {
     public static void main(String[] args) {
         Tree<Integer> t1 = new Branch<Integer>(new Leaf<Integer>(),
@@ -57,5 +59,13 @@ public class Main {
         System.out.println(t18);
         System.out.println("The size of t18 is " + t18.size());
         System.out.println("The depth of t18 is " + t18.depth());
+
+        // polymorphic map and fold
+        TriFunction<Integer,Integer,Integer,Integer> f = (n, m, p) -> n + m + p;
+        System.out.println(t6.fold(0, f));
+
+        Tree<Integer> t9 = t6.map(n -> n * 2);
+        System.out.println(t9);
+        System.out.println(t9.fold(0, f));
     }
 }

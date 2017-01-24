@@ -6,6 +6,8 @@
  * @version 20170105
  * 
  */
+import java.util.function.*;
+
 public interface Tree<Elm> {
     /**
      * A method to compute the size of the tree.  The size of a tree
