@@ -61,11 +61,15 @@ public class Main {
         System.out.println("The depth of t18 is " + t18.depth());
 
         // polymorphic map and fold
-        TriFunction<Integer,Integer,Integer,Integer> f = (n, m, p) -> n + m + p;
-        System.out.println(t6.fold(0, f));
+        TriFunction<Integer,String,Integer,Integer> f = (l, v, r) -> l + v.length() + r;
+        // Computes the sum of the lengths of the strings in t18
+        Integer i = t18.fold<Integer>(0, f);  
+        // "<Integer>" above specifies what Res is in this invocation
+        // It can be omitted and written t18.fold(0, f) -- type inference!
+        System.out.println(i);  
 
-        Tree<Integer> t9 = t6.map(n -> n * 2);
+        Tree<Integer> t9 = t18.<Integer>map(s -> s.length());
         System.out.println(t9);
-        System.out.println(t9.fold(0, f));
+        System.out.println(t9.fold(0, (l,v,r) -> l + v + r));
     }
 }
