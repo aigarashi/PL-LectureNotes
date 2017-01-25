@@ -33,7 +33,7 @@ let rec insert cmp t n =
      else (* n > v *) Br {left=l; value=v; right=insert cmp r n}
 
 (* Function min, which, given BST t, returns the minimum value stored in t.
-   If t is empty, it returns -255. *)
+   If t is empty, it fails. *)
 let rec min t =
   match t with
     Lf -> assert(false)
