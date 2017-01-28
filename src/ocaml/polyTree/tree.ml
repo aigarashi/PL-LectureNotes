@@ -51,6 +51,22 @@ let rec string_of_int_tree t =
                 ^ string_of_int v ^ ","
                 ^ string_of_int_tree r ^ ")"
 
+let rec treemap f t =
+  match t with
+    Lf -> Lf
+  | Br {left=l; value=v; right=r} ->
+     Br {left = treemap f l;
+         value = f v;
+         right = treemap f r}
+
+let rec treefold e f t =
+  match t with
+    Lf -> e
+  | Br {left=l; value=v; right=r} ->
+     f (treefold e f l)
+       v
+       (treefold e f r)
+                                           
 (* Constructing a sample tree holding integers *)
 let t1 = Br {left = Lf; value = 10; right = Lf}
 let t2 = Br {left = Lf; value = 25; right = Lf}
@@ -89,3 +105,15 @@ let t18 = add(t16, "Me, too!")
 let s18 = size t18
 let d18 = depth t18
 
+(* Examples of treemap: t26 is a tree of strings, each of which is
+  obtained by adding a currency name; here, treemap is used to
+  convert an integer tree to a string tree.
+
+  t36 holds the lengths of strings in t16; here, treemap is used to
+  convert a string tree to an int tree.  *)
+let t26 = treemap (fun i -> string_of_int i ^ " yen") t6
+let t36 = treemap String.length t16
+
+(* Example of treefold: s is the sum of the lengths of strings in
+   t16; the anonymous function is of type int -> string -> int -> int *)
+let s = treefold 0 (fun l v r -> l + String.length v + r) t16
