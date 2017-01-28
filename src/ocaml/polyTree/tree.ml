@@ -105,3 +105,15 @@ let t18 = add(t16, "Me, too!")
 let s18 = size t18
 let d18 = depth t18
 
+(* Examples of treemap: t26 is a tree of strings, each of which is
+  obtained by adding a currency name; here, treemap is used to
+  convert an integer tree to a string tree.
+
+  t36 holds the lengths of strings in t16; here, treemap is used to
+  convert a string tree to an int tree.  *)
+let t26 = treemap (fun i -> string_of_int i ^ " yen") t6
+let t36 = treemap String.length t16
+
+(* Example of treefold: s is the sum of the lengths of strings in
+   t16; the anonymous function is of type int -> string -> int -> int *)
+let s = treefold 0 (fun l v r -> l + String.length v + r) t16
