@@ -36,7 +36,7 @@ let rec insert cmp t n =
    If t is empty, it fails. *)
 let rec min t =
   match t with
-    Lf -> assert(false)
+    Lf -> raise (Invalid_argument "Input can't be a leaf!")
   | Br {left=Lf; value=v; right=_} -> v
   | Br {left=l; value=_; right=_} -> min l
 
