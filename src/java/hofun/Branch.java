@@ -23,7 +23,7 @@ public class Branch implements Tree {
      * A method to transform each value by function f
      *
      * @param f     function to transform integers held at branches 
-     * @return      a new tree obtained by applying t to values
+     * @return      a new tree obtained by applying f to values
      */
     public Tree map(IntToInt f) {
         Tree newLeft = left.map(f);
