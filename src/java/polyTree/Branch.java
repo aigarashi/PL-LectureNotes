@@ -4,6 +4,8 @@
  * @version 20170105
  * 
  */
+import java.util.function.*;
+
 public class Branch<Elm> implements Tree<Elm> {
     // instance variables to hold an element of type Elm and subtrees
     private Tree<Elm> left;
@@ -62,5 +64,32 @@ public class Branch<Elm> implements Tree<Elm> {
      */
     public String toString() {
         return "branch(" + left + ", " + v + ", " + right + ")";
+    }
+
+    /**
+     * A method to transform each value by function f
+     *
+     * @param f     a function from Elm to Elm2
+     * @return      a new tree obtained by applying f to values
+     */
+    public <Elm2> Tree<Elm2> map(Function<Elm,Elm2> f) {
+        Tree<Elm2> newLeft = left.map(f);
+        Tree<Elm2> newRight = right.map(f);
+        Elm2 newVal = f.apply(v);
+        return new Branch<Elm2>(newLeft, newVal, newRight);
+    }
+
+    /**
+     * A method for folding a tree with two operators e and f
+     *
+     * @param e  represents a Res to replace a leaf
+     * @param f  represents a function to replace a branch 
+     *           f takes Res, Elm and Res and returns Res
+     * @return  a Res-ult
+     */
+    public <Res> Res fold(Res e, TriFunction<Res,Elm,Res,Res> f) {
+        Res l = left.fold(e, f);
+        Res r = right.fold(e, f);
+        return f.apply(l, v, r);            
     }
 }
