@@ -6,7 +6,7 @@ all he/she needs to know. The comments should usually include at least:
 
 PROJECT TITLE:
 PURPOSE OF PROJECT:  Class "Programming Languages" at Kyoto University
-VERSION or DATE: 20160825
+VERSION or DATE: 20171029
 HOW TO START THIS PROJECT:  Invoke Main.main().
 AUTHORS: Atsushi Igarashi
 USER INSTRUCTIONS:
