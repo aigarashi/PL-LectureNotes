@@ -121,4 +121,46 @@ public class BinarySearchTree {
 	    }
         }
     }
+
+    /**
+     * An iterative method to find the given number in a BST.
+     * 
+     * @param  t    BST to be searched
+     * @param  n    the number to be searched for
+     * @return      whether n is found in the BST
+     */
+    public static boolean findIter(BinarySearchTree t, int n) {
+        while (true) {
+            if (t == null) {
+                return false;
+            } else if (n == t.v) {
+                return true;
+            } else if (n < t.v) {
+                t = t.left;
+                n = n;
+            } else /* n > t.v */ {
+                t = t.right;
+                n = n;
+            }
+        }
+    }
+
+    /**
+     * An iterative method to find the given number in a BST.
+     * 
+     * @param  t    BST to be searched
+     * @param  n    the number to be searched for
+     * @return      whether n is found in the BST
+     */
+    public static boolean findIterTake2(BinarySearchTree t, int n) {
+        while (t != null && n != t.v) {
+            if (n < t.v) {
+                t = t.left;
+            } else /* n > t.v */ {
+                t = t.right;
+            }
+        }
+        return (t != null);
+    }
+
 }
