@@ -39,10 +39,10 @@ public class Delete implements BSTVisitorBST {
                 }
             }
         } else if (n < v) {
-            BinarySearchTree newLeft = left.accept(new Delete(n));
+            BinarySearchTree newLeft = left.accept(this);
             return new Branch(newLeft, v, right);
         } else /* n > v */ {
-            BinarySearchTree newRight = right.accept(new Delete(n));
+            BinarySearchTree newRight = right.accept(this);
             return new Branch(left, v, newRight);
         }
     }

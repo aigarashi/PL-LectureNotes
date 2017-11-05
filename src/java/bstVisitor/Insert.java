@@ -25,10 +25,10 @@ public class Insert implements BSTVisitorBST {
         if (n == v) {
             return new Branch(left, v, right);
         } else if (n < v) {
-            BinarySearchTree newLeft = left.accept(new Insert(n));
+            BinarySearchTree newLeft = left.accept(this);
             return new Branch(newLeft, v, right);
         } else /* n > v */ {
-            BinarySearchTree newRight = right.accept(new Insert(n));
+            BinarySearchTree newRight = right.accept(this);
             return new Branch(left, v, newRight);
         }
     }

@@ -19,7 +19,7 @@ public class Min implements BSTVisitorI {
         if (left.accept(new IsLeaf())) {
             return v;
         } else {
-            return left.accept(new Min());
+            return left.accept(this);
         }
     }
 }

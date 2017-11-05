@@ -23,11 +23,11 @@ public class Insert implements BSTVisitorBST {
         if (n == that.getV()) {
             return that;
         } else if (n < that.getV()) {
-            BinarySearchTree newLeft = that.getLeft().accept(new Insert(n));
+            BinarySearchTree newLeft = that.getLeft().accept(this);
             that.setLeft(newLeft);
             return that;
         } else /* n > that.v */ {
-            BinarySearchTree newRight = that.getRight().accept(new Insert(n));
+            BinarySearchTree newRight = that.getRight().accept(this);
             that.setRight(newRight);
             return that;
         }

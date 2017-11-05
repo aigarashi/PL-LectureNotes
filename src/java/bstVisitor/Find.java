@@ -19,9 +19,9 @@ public class Find implements BSTVisitorB {
         if (n == v) {
             return true;
         } else if (n < v) {
-            return left.accept(new Find(n));
+            return left.accept(this);
         } else /* n > v */ {
-            return right.accept(new Find(n));
+            return right.accept(this);
         }
     }
 }
