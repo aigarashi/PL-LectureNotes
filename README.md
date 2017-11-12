@@ -44,8 +44,8 @@
 |3   |10/23| OCaml の概要 | [03-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/03-ocaml.html)     |      |
 |4   |10/30| 2分探索木 in OCaml (1),  2分探索木 in Java (2) | [04-bst-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/04-bst-ocaml.html), [05-bst-java-vars.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/05-bst-java-vars.html)  | [課題1(締切: 11/13) ](https://github.com/ProgrammingLanguagesAtKUEng/kadai1) |
 |5   |11/6| 2分探索木 in Java (3), 再帰と繰り返し | [06-rec-iter.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/06-rec-iter.html)  |     | 
-|6   |11/13| (未定) |      |      |
-|7   |11/20| C言語の概要(1) | [06-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/06-C.html)     |      |
+|6   |11/13| 続・再帰と繰り返し |      |      |
+|7   |11/20| 以下は去年の内容です: C言語の概要(1) | [06-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/06-C.html)     |      |
 |8   |12/4| C言語の概要(2) |    |      |
 |9   |12/11| 2分探索木 in C, プログラミング言語の構文論  |[07-bst-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/07-bst-C.html), [08-language-syntax.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/08-language-syntax.html)|      |
 |10  |12/18| プログラミング言語の構文論 | [08-language-syntax.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/08-language-syntax.html)|      |
