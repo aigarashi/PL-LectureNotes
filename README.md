@@ -46,14 +46,13 @@
 |5   |11/6| 2分探索木 in Java (3), 再帰と繰り返し | [06-rec-iter.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/06-rec-iter.html)  |     | 
 |6   |11/13| 続・再帰と繰り返し |      |      |
 |7   |11/20| 短命な2分探索木 in Java and OCaml | [05-bst-java-vars.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/05-bst-java-vars.html#mutable-bst), [03-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/03-ocaml.html#quick-intro-ocaml3), [04-bst-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/04-bst-ocaml.html#bstMutable-ocaml)  |      |
-|    |    | 以下は昨年の進行です | | |
-|8   |12/4| C言語の概要(2) |    |      |
-|9   |12/11| 2分探索木 in C, プログラミング言語の構文論  |[07-bst-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/07-bst-C.html), [08-language-syntax.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/08-language-syntax.html)|      |
-|10  |12/18| プログラミング言語の構文論 | [08-language-syntax.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/08-language-syntax.html)|      |
-|11  |12/25(!)| 再帰と繰り返し |  |      |
-|12  |1/15| 多相性(1)  | [10-polymorphism.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/10-polymorphism.html) |      |
-|13  |1/22| 高階関数   | [11-hofuns.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/11-hofuns.html) |      |
-|14  |1/29| 多相性と高階関数，試験について  | [12-polyBST.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/12-polyBST.html) |      |
+|8   |12/4|   |    |      |
+|9   |12/11|  |    |      |
+|10  |12/18|  |    |      |
+|11  |12/25(!)|  |      |      |
+|12  |1/15|   |  |      |
+|13  |1/22|   |  |      |
+|14  |1/29| 試験について |     |      |
 |    |2/5(?)|試験      |      |      |
 
 
@@ -76,6 +75,26 @@
 
 * [OCaml, C 開発環境のセットアップ](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/setup.html)
 * [OCaml, C 開発環境の利用法](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/usage.html)
+
+## 昨年の進行(参考)
+
+|回数|日付| 内容 |
+|----|----|-----------|
+|1   |10/3| 概要・2分探索木の復習 |
+|2   |10/17| 2分探索木 in Java (1) |
+|3   |10/24| 2分探索木 in Java (2) |
+|4   |10/31| OCaml の概要 |
+|5   |11/7| OCaml の概要(2), 2分探索木 in OCaml (1) |
+|6   |11/14| OCaml の概要(3), 2分探索木 in OCaml (2) |
+|7   |11/28| C言語の概要(1) |
+|8   |12/5| C言語の概要(2) |
+|9   |12/12| 2分探索木 in C, プログラミング言語の構文論  |
+|10  |12/19| プログラミング言語の構文論 |
+|11  |12/26| 再帰と繰り返し |
+|12  |1/16| 多相性(1)  |
+|13  |1/23| 高階関数   |
+|14  |1/30| 多相性と高階関数，試験について  |
+|    |2/6|試験      |      |      |
 
 -----------
 Copyright 五十嵐 淳 (pl17@fos.kuis.kyoto-u.ac.jp), 2016, 2017
