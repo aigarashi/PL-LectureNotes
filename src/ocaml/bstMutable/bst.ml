@@ -24,10 +24,10 @@ let rec find t n =
 let rec insert t n =
   match t with
     Lf -> Br {left=Lf; value=n; right=Lf}
-  | Br br ->
-     if n = br.value then t
-     else if n < br.value then (br.left <- insert br.left n; t)
-     else (br.right <- insert br.right n; t)
+  | Br ({left=l; value=v; right=r} as br) ->
+     if n = v then t
+     else if n < v then (br.left <- insert l n; t)
+     else (br.right <- insert r n; t)
 
 (* Function min, which, given BST t, returns the minimum value stored in t.
    If t is empty, it returns -255. *)
@@ -44,38 +44,18 @@ let rec min t =
 let rec delete t n =
   match t with
     Lf -> t
-  | Br br ->
-     if n = br.value then
-       match br.left, br.right with
+  | Br ({left=l; value=v; right=r} as br) ->
+     if n = v then
+       match l, r with
 	 Lf, Lf -> Lf
-       | Br _, Lf -> br.left
-       | Lf, Br _ -> br.right
+       | Br _, Lf -> l
+       | Lf, Br _ -> r
        | Br _, Br _ ->
-	  let m = min br.right in
-	  br.right <- delete br.right m;
+	  let m = min r in
+	  br.right <- delete r m;
 	  t
-     else if n < br.value then (br.left <- delete br.left n; t)
-     else (* n > br.value *) (br.right <- delete br.right n; t)
-
-(* These functions could be used directly but a user has to maintain
-   the returned root.  Code below is to make code "more imperative" *)
-
-(* Another datatype to represent the root of a tree *)
-type bst = {mutable root: tree}
-
-(* Proxy functions.  They have the same name to prevent the original
-   definitions from being called by mistake *)
-
-(* find : bst -> int *)
-let find r n = find r.root n
-
-(* insert : bst -> unit *)
-let insert t n =
-  t.root <- insert t.root n
-
-(* delete : bst -> unit *)
-let delete r n =
-  r.root <- delete r.root n
+     else if n < v then (br.left <- delete l n; t)
+     else (* n > v *) (br.right <- delete r n; t)
 
 (* Constructing a sample tree *)
 let t1 = Br {left = Lf; value = 10; right = Lf}
@@ -84,29 +64,19 @@ let t3 = Br {left = t1; value = 15; right = t2}
 let t4 = Br {left = Lf; value = 60; right = Lf}
 let t5 = Br {left = Lf; value = 48; right = t4}
 let t6 = Br {left = t3; value = 30; right = t5}
-let t = {root = t6}
 
 (* Testing find *)
-let test1 = find t 30  (* should be true *)
-let test2 = find t 13  (* should be false *)
+let test1 = find t6 30  (* should be true *)
+let test2 = find t6 13  (* should be false *)
 
 (* Testing insert *)
-let () = insert t 23
-let () = insert t 0
-let test3 = find t 23  (* should return true *)
-let test4 = find t 30  (* should return false *)
-let test5 = find t 23  (* should return false *)
+let t7 = insert t6 23
+let t7 = insert t7 0
+let test3 = find t7 23  (* should return true *)
+let test4 = find t7 30  (* should return false *)
+let test5 = find t7 23  (* should return false *)
 
 (* Testing delete *)
-let () = delete t 30
-let test6 = find t 30
-let test7 = find t 48
-
-module Aux =
-struct
-  let rec preorder t =
-    match t with
-      Lf -> []
-    | Br {left=l; value=v; right=r} ->
-       preorder l @ v :: preorder r
-end
+let t8 = delete t7 30
+let test6 = find t8 30
+let test7 = find t8 48
