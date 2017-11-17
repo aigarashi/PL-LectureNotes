@@ -4,7 +4,9 @@
  * @author Atsushi Igarashi
  * @version 20160824
  */
-import BST.*;
+
+import bst.*;
+
 public class Main {
     public static void main(String[] args) {
         BinarySearchTree t1 = Leaf.obj.insert(30);

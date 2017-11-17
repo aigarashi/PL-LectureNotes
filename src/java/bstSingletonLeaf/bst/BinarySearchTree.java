@@ -1,12 +1,14 @@
-package BST;
 /**
  * Two kinds of nodes (leaf or branch) are expressed by two classes.
  * Immutable data structure so that tree manipulation returns a new tree.
  * 
  * @author Atsushi Igarashi
- * @version 20160824
+ * @version 20171117
  * 
  */
+
+package bst;
+
 public interface BinarySearchTree {
     /**
      * A method to ask if the tree is a leaf.

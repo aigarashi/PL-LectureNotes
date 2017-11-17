@@ -1,10 +1,12 @@
-package BST;
 /**
  * Write a description of class Branch here.
  * 
  * @author Atsushi Igarashi
- * @version 20160912
+ * @version 20171117
  */
+
+package bst;
+
 public class Branch implements BinarySearchTree {
     // instance variables to hold a number and subtrees
     private BinarySearchTree left;

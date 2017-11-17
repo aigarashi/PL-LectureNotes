@@ -1,10 +1,12 @@
-package BST;
 /**
  * Write a description of class Leaf here.
  * 
  * @author Atsushi Igarashi
- * @version 20160824
+ * @version 20171117
  */
+
+package bst;
+
 public class Leaf implements BinarySearchTree {
     // no instance variables
 
