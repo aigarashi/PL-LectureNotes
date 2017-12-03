@@ -46,7 +46,7 @@
 |5   |11/6| 2分探索木 in Java (3), 再帰と繰り返し | [06-rec-iter.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/06-rec-iter.html)  |     | 
 |6   |11/13| 続・再帰と繰り返し |      |      |
 |7   |11/20| 短命な2分探索木 in Java and OCaml | [05-bst-java-vars.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/05-bst-java-vars.html#mutable-bst), [03-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/03-ocaml.html#quick-intro-ocaml3), [04-bst-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/04-bst-ocaml.html#bstMutable-ocaml)  |      |
-|8   |12/4|   |    |      |
+|8   |12/4|モジュールシステム | [modules.html]((http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/modules.html)   |    |
 |9   |12/11|  |    |      |
 |10  |12/18|  |    |      |
 |11  |12/25(!)|  |      |      |
@@ -54,7 +54,6 @@
 |13  |1/22|   |  |      |
 |14  |1/29| 試験について |     |      |
 |    |2/5(?)|試験      |      |      |
-
 
 講義で紹介するプログラムは(上のファイル一覧にある) src/ 以下で公開するので適宜ダウンロードしてもらいたい．
 
