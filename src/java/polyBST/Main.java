@@ -47,11 +47,11 @@ public class Main {
         boolean test11 = t16.find("so?");  // should be true
         boolean test12 = t16.find("Ocaml");  // should be false
         BinarySearchTree<String> t17 = t16.insert("Me");
-        BinarySearchTree<String> t18 = t16.insert("too");
+        BinarySearchTree<String> t18 = t17.insert("too");
         boolean test13 = t17.find("Me");  // should be true
         boolean test14 = t18.find("so?");  // should be true
         boolean test15 = t18.find("Why");  // should be false
-        BinarySearchTree<String> t19 = t18.delete("Why");
+        BinarySearchTree<String> t19 = t18.delete("so?");
         boolean test16 = t19.find("Why");  // should be false
         boolean test17 = t19.find("you");  // should be true
 
