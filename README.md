@@ -48,7 +48,7 @@
 |7   |11/20| 短命な2分探索木 in Java and OCaml | [05-bst-java-vars.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/05-bst-java-vars.html#mutable-bst), [03-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/03-ocaml.html#quick-intro-ocaml3), [04-bst-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/04-bst-ocaml.html#bstMutable-ocaml)  |      |
 |8   |12/4|モジュールシステム | [modules.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/modules.html)   |    |
 |9   |12/11| モジュールシステム， 多相性(1)  | [10-polymorphism.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/10-polymorphism.html)   |      |
-|10  |12/18|  |    |      |
+|10  |12/18| 高階関数と多相性 | [11-hofuns.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/11-hofuns.html)   |      |
 |11  |12/25(!)|  |      |      |
 |12  |1/15|   |  |      |
 |13  |1/22|   |  |      |
