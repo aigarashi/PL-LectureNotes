@@ -49,10 +49,11 @@
 |8   |12/4|モジュールシステム | [modules.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/modules.html)   |    |
 |9   |12/11| モジュールシステム， 多相性(1)  | [10-polymorphism.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/10-polymorphism.html)   |      |
 |10  |12/18| 高階関数と多相性 | [11-hofuns.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/11-hofuns.html), [12-polyBST.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/12-polyBST.html)   |      |
-|11  |12/25(!)|  |      |      |
+|11  |12/25| 多相的な2分探索木 | [12-polyBST.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/12-polyBST.html) |      |
 |12  |1/15|   |  |      |
-|13  |1/22|   |  |      |
-|14  |1/29| 試験について |     |      |
+|13  |1/16(火)|   |  |      |
+|14  |1/22|   |  |      |
+|15  |1/29| 試験について |     |      |
 |    |2/5(?)|試験      |      |      |
 
 講義で紹介するプログラムは(上のファイル一覧にある) src/ 以下で公開するので適宜ダウンロードしてもらいたい．
