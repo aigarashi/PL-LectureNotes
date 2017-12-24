@@ -46,10 +46,10 @@
 |5   |11/6| 2分探索木 in Java (3), 再帰と繰り返し | [06-rec-iter.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/06-rec-iter.html)  |     | 
 |6   |11/13| 続・再帰と繰り返し |      |      |
 |7   |11/20| 短命な2分探索木 in Java and OCaml | [05-bst-java-vars.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/05-bst-java-vars.html#mutable-bst), [03-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/03-ocaml.html#quick-intro-ocaml3), [04-bst-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/04-bst-ocaml.html#bstMutable-ocaml)  |      |
-|8   |12/4|モジュールシステム | [modules.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/modules.html)   |    |
-|9   |12/11| モジュールシステム， 多相性(1)  | [10-polymorphism.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/10-polymorphism.html)   |      |
-|10  |12/18| 高階関数と多相性 | [11-hofuns.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/11-hofuns.html), [12-polyBST.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/12-polyBST.html)   |      |
-|11  |12/25| 多相的な2分探索木 | [12-polyBST.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/12-polyBST.html) |      |
+|8   |12/4|モジュールシステム | [07-modules.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/07modules.html)   |    |
+|9   |12/11| モジュールシステム， 多相性(1)  | [08-polymorphism.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/08-polymorphism.html)   |      |
+|10  |12/18| 高階関数と多相性 | [09-hofuns.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/09-hofuns.html) |      |
+|11  |12/25| 多相的な2分探索木 | [10-polyBST.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/10-polyBST.html) |      |
 |12  |1/15|   |  |      |
 |13  |1/16(火)|   |  |      |
 |14  |1/22|   |  |      |
