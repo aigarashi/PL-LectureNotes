@@ -63,7 +63,7 @@ public class Main {
         // polymorphic map and fold
         TriFunction<Integer,String,Integer,Integer> f = (l, v, r) -> l + v.length() + r;
         // Computes the sum of the lengths of the strings in t18
-        Integer i = t18.fold<Integer>(0, f);  
+        Integer i = t18.<Integer>fold(0, f);  
         // "<Integer>" above specifies what Res is in this invocation
         // It can be omitted and written t18.fold(0, f) -- type inference!
         System.out.println(i);  
