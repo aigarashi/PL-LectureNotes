@@ -3,12 +3,16 @@
 ;; where left and right are trees and value is an integer.
 
 ;; constructor functions
-(define (newbranch l v r) (list 'Br l v r))
+(define (newbranch l v r)
+  `(Br ,l ,v ,r))
 (define (newleaf) 'Lf)
 
 ;; predicates to see if a given tree is a leaf (or a branch)
-(define (leaf? t) (eq? t 'Lf))
-(define (branch? t) (and (list? t) (eq? (car t) 'Br)))
+(define (leaf? t)
+  (eq? t 'Lf))
+(define (branch? t)
+  (and (pair? t)
+       (eq? (car t) 'Br)))
 
 ;; selector functions
 (define (branch-left t) (cadr t))
