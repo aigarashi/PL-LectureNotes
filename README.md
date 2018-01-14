@@ -52,7 +52,7 @@
 |10  |12/18| 高階関数と多相性 | [09-hofuns.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/09-hofuns.html) |      |
 |11  |12/25| 多相的な2分探索木 | [10-polyBST.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/10-polyBST.html) | [課題2(締切: 1/14) ](https://github.com/ProgrammingLanguagesAtKUEng/kadai2) |
 |12  |1/15| C言語の概要  | [11-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/11-C.html) |      |
-|13  |1/16(火)| 2分探索木 in C， Lisp(Scheme)の概要  | [12-bst-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/12-bst-C.html), [13-Lisp.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/13-Lisp.html) |      |
+|13  |1/16(火)| 2分探索木 in C， Lisp(Scheme)の概要  | [12-bst-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/12-bst-C.html), [13-lisp.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/13-lisp.html) |      |
 |14  |1/22|   |  |      |
 |15  |1/29| 試験について |     |      |
 |    |2/5(?)|試験      |      |      |
