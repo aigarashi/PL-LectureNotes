@@ -52,7 +52,7 @@
 |10  |12/18| 高階関数と多相性 | [09-hofuns.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/09-hofuns.html) |      |
 |11  |12/25| 多相的な2分探索木 | [10-polyBST.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/10-polyBST.html) | [課題2(締切: 1/14) ](https://github.com/ProgrammingLanguagesAtKUEng/kadai2) |
 |12  |1/15| C言語の概要  | [11-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/11-C.html) |      |
-|13  |1/16(火)| 2分探索木 in C  | [12-bst-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/12-bst-C.html) |      |
+|13  |1/16(火)| 2分探索木 in C， Lisp(Scheme)の概要  | [12-bst-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/12-bst-C.html), [13-Lisp.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/13-Lisp.html) |      |
 |14  |1/22|   |  |      |
 |15  |1/29| 試験について |     |      |
 |    |2/5(?)|試験      |      |      |
@@ -67,6 +67,7 @@
 * J. Gosling, B. Joy, G. Steele, G. Bracha, A. Buckley.  [The Java Language Specification. Java SE 8 Edition.](https://docs.oracle.com/javase/specs/jls/se8/html/index.html)
 * J. Gosling, B. Joy, G. Steele, G. Bracha, A. Buckley.  [The Java Language Specification. Java SE 9 Edition.](https://docs.oracle.com/javase/specs/jls/se9/html/index.html)
 * C99 (ISOが1999年に定めたC言語規格 ISO/IEC 9899:1999) (正式版は有料だが，[ドラフト](http://www.open-std.org/jtc1/sc22/WG14/www/docs/n1256.pdf)が落ちている．) その後 C11 に改訂されている．
+* Richard Kelsey, William Clinger, and Jonathan Rees (Editors). [Revised^5 Report on the Algorithmic Language Scheme](http://www.schemers.org/Documents/Standards/R5RS/) Scheme 言語仕様の改訂第５版(略してR5RSと呼ぶ)．最新は2017年10月に策定された改訂第7版であるが諸般の事情により，第5版を参考にする．
 
 ### OCaml 情報
 * 五十嵐淳． [OCaml 入門](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/isle4-11w/mltext.pdf) (次の本の元になった計算機科学実験及演習の資料．この講義の範囲ならこれで十分)
