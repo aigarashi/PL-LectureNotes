@@ -1,18 +1,21 @@
 ;; Defining the shape of trees
-;; tree is either a symbol 'Lf or a four-element list ('Br left value right)
-;; where left and right are trees and value is an integer.
+;; tree is either list (Lf) or a four-element list (Br <left> <value> <right>)
+;; where <left> and <right> are trees and <value> is an integer.
 
 ;; constructor functions
 (define (newbranch l v r)
-  `(Br ,l ,v ,r))
-(define (newleaf) 'Lf)
+  (list 'Br l v r)) ;; could be written `(Br ,l ,v ,r)
+(define (newleaf)
+  (list 'Lf))       ;; could be written '(Lf)
 
 ;; predicates to see if a given tree is a leaf (or a branch)
+;; It would be a good idea to check whether t is a pair (by using pair?)
+;; before taking car of t so that these functions do not abort when applied to
+;; non-lists.
 (define (leaf? t)
-  (eq? t 'Lf))
+  (eq? (car t) 'Lf))
 (define (branch? t)
-  (and (pair? t)
-       (eq? (car t) 'Br)))
+  (eq? (car t) 'Br))
 
 ;; selector functions
 (define (branch-left t) (cadr t))
