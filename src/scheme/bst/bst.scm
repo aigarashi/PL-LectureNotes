@@ -4,7 +4,7 @@
 
 ;; constructor functions
 (define (newbranch l v r)
-  (list 'Br l v r)) ;; could be written `(Br ,l ,v ,r)
+  (list 'Br v l r)) ;; could be written `(Br ,v ,l ,r)
 (define (newleaf)
   (list 'Lf))       ;; could be written '(Lf)
 
@@ -18,8 +18,8 @@
   (eq? (car t) 'Br))
 
 ;; selector functions
-(define (branch-left t) (cadr t))
-(define (branch-value t) (caddr t))
+(define (branch-left t) (caddr t))
+(define (branch-value t) (cadr t))
 (define (branch-right t) (cadddr t))
 
 ;; (Recursive) function find, which returns whether given integer n exists in BST t.

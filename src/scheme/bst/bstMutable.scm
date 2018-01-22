@@ -4,7 +4,7 @@
 
 ;; constructor functions
 (define (newbranch l v r)
-  (list 'Br l v r)) ;; could be written `(Br ,l ,v ,r)
+  (list 'Br v l r)) ;; could be written `(Br ,v ,l ,r)
 (define (newleaf)
   (list 'Lf))       ;; could be written '(Lf)
 
@@ -15,15 +15,15 @@
   (eq? (car t) 'Br))
 
 ;; selector functions
-(define (branch-left t) (cadr t))
-(define (branch-value t) (caddr t))
+(define (branch-left t) (caddr t))
+(define (branch-value t) (cadr t))
 (define (branch-right t) (cadddr t))
 
 ;; mutator functions
 (define (set-branch-left! t newleft)
-  (set-car! (cdr t) newleft))
+  (set-car! (cddr t) newleft))
 (define (set-branch-value! t newval)
-  (set-car! (cddr t) newval))
+  (set-car! (cdr t) newval))
 (define (set-branch-right! t newright)
   (set-car! (cdddr t) newright))
 
