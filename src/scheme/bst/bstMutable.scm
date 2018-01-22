@@ -15,15 +15,15 @@
   (eq? (car t) 'Br))
 
 ;; selector functions
-(define (branch-left t) (caddr t))
 (define (branch-value t) (cadr t))
+(define (branch-left t) (caddr t))
 (define (branch-right t) (cadddr t))
 
 ;; mutator functions
-(define (set-branch-left! t newleft)
-  (set-car! (cddr t) newleft))
 (define (set-branch-value! t newval)
   (set-car! (cdr t) newval))
+(define (set-branch-left! t newleft)
+  (set-car! (cddr t) newleft))
 (define (set-branch-right! t newright)
   (set-car! (cdddr t) newright))
 

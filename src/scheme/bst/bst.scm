@@ -18,8 +18,8 @@
   (eq? (car t) 'Br))
 
 ;; selector functions
-(define (branch-left t) (caddr t))
 (define (branch-value t) (cadr t))
+(define (branch-left t) (caddr t))
 (define (branch-right t) (cadddr t))
 
 ;; (Recursive) function find, which returns whether given integer n exists in BST t.
