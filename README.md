@@ -1,4 +1,4 @@
-# 工学部専門科目「プログラミング言語」講義資料(2017年度)
+# 工学部専門科目「プログラミング言語」講義資料(2018年度)
 
 このページのURL: http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/ (現在 https://github.com/aigarashi/PL-LectureNotes に転送されます．)
 
@@ -9,14 +9,12 @@
 * 担当: 五十嵐 淳
     * オフィスアワー: 月曜17:00〜18:00(総合研究7号館224)
          * その他の時間は要アポイントメント
-* 担当ＴＡ: 矢杉和義 (通信情報システム専攻M2)
+* 担当ＴＡ: 矢杉和義 (通信情報システム専攻D1)
 
 ## お知らせ
 
-* 課題2を出しました．締切は 1/14 です． (2017.12.25)
+* 2018年度ページたちあげ (2018.9.4)
 * BlueJ のデバッガなんて知らん，ということなので[今年の「プログラミング入門」で使った資料](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/tmp/BlueJTool2.pdf)を置きました．(2017.11.06)
-* 課題1を出しました．締切は 11/13 です． (2017.10.29)
-* 2017年度ページたちあげ (2017.9.27)
 
 ## 授業の概要・目的(シラバスより)
 
@@ -40,22 +38,22 @@
 
 |回数|日付| 内容 | 資料 | 宿題 |
 |----|----|-----------|------|------|
-|1   |10/2| 講義概要・Javaと2分探索木の復習 | [00-introduction.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/00-introduction.html)  |  Java の復習 [01-java.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/01-java.html) |
-|2   |10/16| 2分探索木 in Java (1) | [02-bst-java.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/02-bst-java.html) |      |
-|3   |10/23| OCaml の概要 | [03-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/03-ocaml.html)     |      |
-|4   |10/30| 2分探索木 in OCaml (1),  2分探索木 in Java (2) | [04-bst-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/04-bst-ocaml.html), [05-bst-java-vars.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/05-bst-java-vars.html)  | [課題1(締切: 11/13) ](https://github.com/ProgrammingLanguagesAtKUEng/kadai1) |
-|5   |11/6| 2分探索木 in Java (3), 再帰と繰り返し | [06-rec-iter.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/06-rec-iter.html)  |     | 
-|6   |11/13| 続・再帰と繰り返し |      |      |
-|7   |11/20| 短命な2分探索木 in Java and OCaml | [05-bst-java-vars.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/05-bst-java-vars.html#mutable-bst), [03-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/03-ocaml.html#quick-intro-ocaml3), [04-bst-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/04-bst-ocaml.html#bstMutable-ocaml)  |      |
-|8   |12/4|モジュールシステム | [07-modules.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/07-modules.html)   |    |
-|9   |12/11| モジュールシステム， 多相性(1)  | [08-polymorphism.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/08-polymorphism.html)   |      |
-|10  |12/18| 高階関数と多相性 | [09-hofuns.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/09-hofuns.html) |      |
-|11  |12/25| 多相的な2分探索木 | [10-polyBST.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/10-polyBST.html) | [課題2(締切: 1/14) ](https://github.com/ProgrammingLanguagesAtKUEng/kadai2) |
-|12  |1/15| C言語の概要  | [11-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/11-C.html) |      |
-|13  |1/16(火)| 2分探索木 in C， Lisp(Scheme)の概要  | [12-bst-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/12-bst-C.html), [13-lisp.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/13-lisp.html) |      |
-|14  |1/22| 続Lisp, 2分探索木 in Scheme | |      |
-|15  |1/29| プログラミング言語の仕様を読む，試験について | [14-language-syntax.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/14-language-syntax.html)    |      |
-|    |2/5|試験      |      |      |
+|1   |10/1| 講義概要・Javaと2分探索木の復習 | [00-introduction.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/00-introduction.html)  |  Java の復習 [01-java.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/01-java.html) |
+|2   |10/15| 2分探索木 in Java (1) | [02-bst-java.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/02-bst-java.html) |      |
+|3   |10/22| OCaml の概要 | [03-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/03-ocaml.html)     |      |
+|4   |10/29| 2分探索木 in OCaml (1),  2分探索木 in Java (2) | [04-bst-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/04-bst-ocaml.html), [05-bst-java-vars.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/05-bst-java-vars.html)  | [課題1(締切: 11/13) ](https://github.com/ProgrammingLanguagesAtKUEng/kadai1) |
+|5   |11/5| 2分探索木 in Java (3), 再帰と繰り返し | [06-rec-iter.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/06-rec-iter.html)  |     | 
+|6   |11/12| 続・再帰と繰り返し |      |      |
+|7   |11/19| 短命な2分探索木 in Java and OCaml | [05-bst-java-vars.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/05-bst-java-vars.html#mutable-bst), [03-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/03-ocaml.html#quick-intro-ocaml3), [04-bst-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/04-bst-ocaml.html#bstMutable-ocaml)  |      |
+|8   |11/28(水)|モジュールシステム | [07-modules.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/07-modules.html)   |    |
+|9   |12/3| モジュールシステム， 多相性(1)  | [08-polymorphism.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/08-polymorphism.html)   |      |
+|10  |12/10| 高階関数と多相性 | [09-hofuns.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/09-hofuns.html) |      |
+|11  |12/17| 多相的な2分探索木 | [10-polyBST.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/10-polyBST.html) | [課題2(締切: 1/14) ](https://github.com/ProgrammingLanguagesAtKUEng/kadai2) |
+|12  |1/7| C言語の概要  | [11-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/11-C.html) |      |
+|13  |1/15(火)| 2分探索木 in C， Lisp(Scheme)の概要  | [12-bst-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/12-bst-C.html), [13-lisp.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/13-lisp.html) |      |
+|14  |1/21| 続Lisp, 2分探索木 in Scheme | |      |
+|15  |1/28| プログラミング言語の仕様を読む，試験について | [14-language-syntax.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/14-language-syntax.html)    |      |
+|    |2/?|試験      |      |      |
 
 講義で紹介するプログラムは(上のファイル一覧にある) src/ 以下で公開するので適宜ダウンロードしてもらいたい．
 
@@ -82,21 +80,22 @@
 
 |回数|日付| 内容 |
 |----|----|-----------|
-|1   |10/3| 概要・2分探索木の復習 |
-|2   |10/17| 2分探索木 in Java (1) |
-|3   |10/24| 2分探索木 in Java (2) |
-|4   |10/31| OCaml の概要 |
-|5   |11/7| OCaml の概要(2), 2分探索木 in OCaml (1) |
-|6   |11/14| OCaml の概要(3), 2分探索木 in OCaml (2) |
-|7   |11/28| C言語の概要(1) |
-|8   |12/5| C言語の概要(2) |
-|9   |12/12| 2分探索木 in C, プログラミング言語の構文論  |
-|10  |12/19| プログラミング言語の構文論 |
-|11  |12/26| 再帰と繰り返し |
-|12  |1/16| 多相性(1)  |
-|13  |1/23| 高階関数   |
-|14  |1/30| 多相性と高階関数，試験について  |
-|    |2/6|試験      |      |      |
+|1   |10/2| 講義概要・Javaと2分探索木の復習 |
+|2   |10/16| 2分探索木 in Java (1) |
+|3   |10/23| OCaml の概要 |
+|4   |10/30| 2分探索木 in OCaml (1),  2分探索木 in Java (2) |
+|5   |11/6| 2分探索木 in Java (3), 再帰と繰り返し |
+|6   |11/13| 続・再帰と繰り返し |
+|7   |11/20| 短命な2分探索木 in Java and OCaml |
+|8   |12/4|モジュールシステム |
+|9   |12/11| モジュールシステム， 多相性(1)  |
+|10  |12/18| 高階関数と多相性 |
+|11  |12/25| 多相的な2分探索木 |
+|12  |1/15| C言語の概要  |
+|13  |1/16(火)| 2分探索木 in C， Lisp(Scheme)の概要  |
+|14  |1/22| 続Lisp, 2分探索木 in Scheme |
+|15  |1/29| プログラミング言語の仕様を読む，試験について |
+|    |2/5|試験      |
 
 -----------
-Copyright 五十嵐 淳 (pl17@fos.kuis.kyoto-u.ac.jp), 2016, 2017
+Copyright 五十嵐 淳 (pl18@fos.kuis.kyoto-u.ac.jp), 2016, 2017, 2018

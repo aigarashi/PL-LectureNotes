@@ -6,6 +6,7 @@
 *.cmo
 *.cmx
 *.cmi
+*.ctxt
 *.dvi
 *.log
 *.out

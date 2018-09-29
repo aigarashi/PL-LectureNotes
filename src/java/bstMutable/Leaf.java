@@ -2,7 +2,7 @@
  * Write a description of class Leaf here.
  * 
  * @author Atsushi Igarashi
- * @version 20160825
+ * @version 20180929
  */
 public class Leaf implements BinarySearchTree {
     // no instance variables
@@ -53,11 +53,11 @@ public class Leaf implements BinarySearchTree {
     /**
      * A method to find a minimum number in a BST
      * 
-     * @return      a minimum number in the BST (or -255, if the tree is empty)
+     * @return      a minimum number in the BST (or Integer.MIN_VALUE, if the tree is empty)
      */
     public int min() {
         // there is no minimum number in the BST
-        return -255;
+        return Integer.MIN_VALUE;
     }
 
     /**
