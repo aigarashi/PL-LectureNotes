@@ -44,13 +44,14 @@
 |5   |11/5| 2分探索木 in Java (3), 再帰と繰り返し | [06-rec-iter.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/06-rec-iter.html)  |     | 
 |6   |11/12| 続・再帰と繰り返し |      |      |
 |7   |11/19| 短命な2分探索木 in Java and OCaml, モジュールシステム(1) | [05-bst-java-vars.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/05-bst-java-vars.html#mutable-bst), [03-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/03-ocaml.html#quick-intro-ocaml3), [04-bst-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/04-bst-ocaml.html#bstMutable-ocaml), [07-modules.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/07-modules.html)  |      |
-|8   |11/28(水)| モジュールシステム(2), 多相性(1)| [08-polymorphism.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/08-polymorphism.html) |    |
+|8   |11/28(水)| モジュールシステム(2)| |    |
 |9   |12/3| (休講)  |   |      |
-|10  |12/10| 高階関数と多相性 | [09-hofuns.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/09-hofuns.html) |      |
-|11  |12/17| 多相的な2分探索木 | [10-polyBST.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/10-polyBST.html) | 課題2(締切: 1/14) |
-|12  |1/7| C言語の概要  | [11-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/11-C.html) |      |
-|13  |1/15(火)| 2分探索木 in C， Lisp(Scheme)の概要  | [12-bst-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/12-bst-C.html), [13-lisp.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/13-lisp.html) |      |
-|14  |1/21| 続Lisp, 2分探索木 in Scheme | |      |
+|10  |12/10| 多相性と高階関数 | [08-polymorphism.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/08-polymorphism.html), [09-hofuns.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/09-hofuns.html) |      |
+|    |12/11(補講)| 多相的な2分探索木 | [10-polyBST.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/10-polyBST.html) | 課題2(締切: 1/14) |
+|11  |12/17| C言語の概要  | [11-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/11-C.html) |      |
+|12  |1/7| 2分探索木 in C | [12-bst-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/12-bst-C.html) |      |
+|13  |1/15| (休講) |   |      |
+|14  |1/21| (休講) |   |      |
 |15  |1/28| プログラミング言語の仕様を読む，試験について | [14-language-syntax.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/14-language-syntax.html)    |      |
 |    |2/?|試験      |      |      |
 
