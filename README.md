@@ -46,14 +46,15 @@
 |6   |11/12| 続・再帰と繰り返し |      |      |
 |7   |11/19| 短命な2分探索木 in Java and OCaml, モジュールシステム(1) | [05-bst-java-vars.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/05-bst-java-vars.html#mutable-bst), [03-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/03-ocaml.html#quick-intro-ocaml3), [04-bst-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/04-bst-ocaml.html#bstMutable-ocaml), [07-modules.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/07-modules.html)  |      |
 |8   |11/28(水)| モジュールシステム(2)| |    |
-|9   |12/3| (休講)  |   |      |
-|10  |12/10| 多相性と高階関数 | [08-polymorphism.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/08-polymorphism.html), [09-hofuns.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/09-hofuns.html) |      |
-|    |12/11(補講)| 多相的な2分探索木 | [10-polyBST.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/10-polyBST.html) | 課題2(締切: 1/6) |
-|11  |12/17| C言語の概要  | [11-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/11-C.html) |      |
-|12  |1/7| 2分探索木 in C | [12-bst-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/12-bst-C.html) |      |
-|13  |1/15| (休講) |   |      |
-|14  |1/21| (休講) |   |      |
-|15  |1/28| プログラミング言語の仕様を読む，試験について | [14-language-syntax.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/14-language-syntax.html)    |      |
+|    |12/3| (休講)  |   |      |
+|9  |12/10| 多相性 | [08-polymorphism.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/08-polymorphism.html) |      |
+|10   |12/11(補講)| 高階関数 | [09-hofuns.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/09-hofuns.html) | 課題2(締切: 1/6) |
+|11  |12/17| 多相的な2分探索木  | [10-polyBST.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/10-polyBST.html) |     |
+|12  |1/7| C言語の概要 | [11-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/11-C.html) |      |
+|13  |1/8| 2分探索木 in C | [12-bst-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/12-bst-C.html) |      |
+|    |1/15| (休講) |   |      |
+|    |1/21| (休講) |   |      |
+|14  |1/28| プログラミング言語の仕様を読む，試験について | [14-language-syntax.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/14-language-syntax.html)    |      |
 |    |2/?|試験      |      |      |
 
 講義で紹介するプログラムは(上のファイル一覧にある) src/ 以下で公開するので適宜ダウンロードしてもらいたい．
