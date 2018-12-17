@@ -51,7 +51,7 @@
 |10   |12/11(補講)| 高階関数 | [09-hofuns.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/09-hofuns.html) |    |
 |11  |12/17| 多相的な2分探索木  | [10-polyBST.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/10-polyBST.html) | 課題2(締切: 1/6) |
 |12  |1/7| C言語の概要 | [11-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/11-C.html) |      |
-|13  |1/8(補講)|| 2分探索木 in C | [12-bst-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/12-bst-C.html) |      |
+|13  |1/8(補講)| 2分探索木 in C | [12-bst-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/12-bst-C.html) |      |
 |    |1/15, 1/21 | (休講) |   |      |
 |14  |1/28| プログラミング言語の仕様を読む，試験について | [14-language-syntax.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/14-language-syntax.html)    |      |
 |    |2/?|試験      |      |      |
