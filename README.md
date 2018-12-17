@@ -13,6 +13,7 @@
 
 ## お知らせ
 
+* 課題2が出ています．締切は 1/6 です．(2018.12.17)
 * 2018年度ページたちあげ (2018.9.4)
 * BlueJ のデバッガなんて知らん，ということなので[今年の「プログラミング入門」で使った資料](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/tmp/BlueJTool2.pdf)を置きました．(2017.11.06)
 
@@ -47,7 +48,7 @@
 |8   |11/28(水)|モジュールシステム | [07-modules.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/07-modules.html)   |    |
 |9   |12/3| モジュールシステム， 多相性(1)  | [08-polymorphism.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/08-polymorphism.html)   |      |
 |10  |12/10| 高階関数と多相性 | [09-hofuns.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/09-hofuns.html) |      |
-|11  |12/17| 多相的な2分探索木 | [10-polyBST.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/10-polyBST.html) | 課題2(締切: 1/14) |
+|11  |12/17| 多相的な2分探索木 | [10-polyBST.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/10-polyBST.html) | 課題2(締切: 1/6) |
 |12  |1/7| C言語の概要  | [11-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/11-C.html) |      |
 |13  |1/15(火)| 2分探索木 in C， Lisp(Scheme)の概要  | [12-bst-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/12-bst-C.html), [13-lisp.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/13-lisp.html) |      |
 |14  |1/21| 続Lisp, 2分探索木 in Scheme | |      |
