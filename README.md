@@ -38,18 +38,18 @@
 
 |回数|日付| 内容 | 資料 | 宿題 |
 |----|----|-----------|------|------|
-|1   |10/1| 講義概要・Javaと2分探索木の復習 | [00-introduction.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/00-introduction.html)  |  Java の復習 [01-java.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/01-java.html) |
-|2   |10/15| 2分探索木 in Java (1) | [02-bst-java.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/02-bst-java.html) |      |
-|3   |10/22| OCaml の概要 | [03-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/03-ocaml.html)     |      |
-|4   |10/29| 2分探索木 in OCaml (1),  2分探索木 in Java (2) | [04-bst-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/04-bst-ocaml.html), [05-bst-java-vars.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/05-bst-java-vars.html)  | 課題1(締切: 11/13) |
-|5   |11/5| 2分探索木 in Java (3), 再帰と繰り返し | [06-rec-iter.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/06-rec-iter.html)  |     | 
+|1   |10/1| 講義概要・Javaと2分探索木の復習 | [00-introduction.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/00-introduction.html)/[00-introduction.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/00-introduction.pdf)  |  Java の復習 [01-java.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/01-java.html)/[01-java.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/01-java.pdf) |
+|2   |10/15| 2分探索木 in Java (1) | [02-bst-java.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/02-bst-java.html)/[02-bst-java.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/02-bst-java.pdf) |      |
+|3   |10/22| OCaml の概要 | [03-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/03-ocaml.html)/[03-ocaml.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/03-ocaml.pdf)     |      |
+|4   |10/29| 2分探索木 in OCaml (1),  2分探索木 in Java (2) | [04-bst-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/04-bst-ocaml.html)/[04-bst-ocaml.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/04-bst-ocaml.pdf), [05-bst-java-vars.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/05-bst-java-vars.html)/[05-bst-java-vars.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/05-bst-java-vars.pdf)  | 課題1(締切: 11/13) |
+|5   |11/5| 2分探索木 in Java (3), 再帰と繰り返し | [06-rec-iter.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/06-rec-iter.html)/[06-rec-iter.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/06-rec-iter.pdf)  |     | 
 |6   |11/12| 続・再帰と繰り返し |      |      |
-|7   |11/19| 短命な2分探索木 in Java and OCaml, モジュールシステム(1) | [05-bst-java-vars.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/05-bst-java-vars.html#mutable-bst), [03-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/03-ocaml.html#quick-intro-ocaml3), [04-bst-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/04-bst-ocaml.html#bstMutable-ocaml), [07-modules.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/07-modules.html)  |      |
+|7   |11/19| 短命な2分探索木 in Java and OCaml, モジュールシステム(1) | [05-bst-java-vars.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/05-bst-java-vars.html#mutable-bst), [03-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/03-ocaml.html#quick-intro-ocaml3), [04-bst-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/04-bst-ocaml.html#bstMutable-ocaml), [07-modules.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/07-modules.html)/[07-modules.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/07-modules.pdf)  |      |
 |8   |11/28(水)| モジュールシステム(2)| |    |
 |    |12/3| (休講)  |   |      |
-|9  |12/10| 多相性 | [08-polymorphism.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/08-polymorphism.html) |      |
-|10   |12/11(補講)| 高階関数 | [09-hofuns.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/09-hofuns.html) |    |
-|11  |12/17| 多相的な2分探索木  | [10-polyBST.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/10-polyBST.html) | 課題2(締切: 1/6) |
+|9  |12/10| 多相性 | [08-polymorphism.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/08-polymorphism.html)/[08-polymorphism.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/08-polymorphism.pdf) |      |
+|10   |12/11(補講)| 高階関数 | [09-hofuns.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/09-hofuns.html)/[09-hofuns.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/09-hofuns.pdf) |    |
+|11  |12/17| 多相的な2分探索木  | [10-polyBST.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/10-polyBST.html)/[10-polyBST.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/10-polyBST.pdf) | 課題2(締切: 1/6) |
 |12  |1/7| C言語の概要 | [11-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/11-C.html) |      |
 |13  |1/8(補講)| 2分探索木 in C | [12-bst-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/12-bst-C.html) |      |
 |    |1/15, 1/21 | (休講) |   |      |
