@@ -13,6 +13,7 @@
 
 ## お知らせ
 
+* [2016年度試験問題](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/final2016.pdf), [2017年度試験問題](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/final2017.pdf) を置きました．(2019.01.27)
 * リクエストにおこたえして配布資料の pdf 版も置きました．(2018.12.19)
 * 課題2が出ています．締切は 1/6 です．(2018.12.17)
 * 2018年度ページたちあげ (2018.9.4)
