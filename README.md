@@ -120,4 +120,4 @@
 |    |2/5|試験      |
 
 -----------
-Copyright 五十嵐 淳 (pl18@fos.kuis.kyoto-u.ac.jp), 2016, 2017, 2018
+Copyright 五十嵐 淳 (pl19@fos.kuis.kyoto-u.ac.jp), 2016, 2017, 2018, 2019
