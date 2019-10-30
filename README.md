@@ -13,6 +13,7 @@
 
 ## お知らせ
 
+* 課題1が出ました．(2019.10.28)
 * 2019年度ページたちあげ (2019.9.19)
 * BlueJ のデバッガなんて知らん，ということなので[今年の「プログラミング入門」で使った資料](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/tmp/BlueJTool2.pdf)を置きました．(2017.11.06)
 
@@ -38,12 +39,12 @@
 |回数|日付| 内容 | 資料 | 宿題 |
 |----|----|-----------|------|------|
 |1   |10/7| 講義概要・Javaと2分探索木の復習 | [00-introduction.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/00-introduction.html)/[00-introduction.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/00-introduction.pdf)  |  Java の復習 [01-java.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/01-java.html)/[01-java.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/01-java.pdf) |
-|2   |10/16(水)| 2分探索木 in Java (1) | [02-bst-java.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/02-bst-java.html)/[02-bst-java.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/02-bst-java.pdf) |      |
-|3   |10/21| OCaml の概要 | [03-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/03-ocaml.html)/[03-ocaml.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/03-ocaml.pdf)     |      |
-|4   |10/28| 2分探索木 in OCaml (1),  2分探索木 in Java (2) | [04-bst-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/04-bst-ocaml.html)/[04-bst-ocaml.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/04-bst-ocaml.pdf), [05-bst-java-vars.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/05-bst-java-vars.html)/[05-bst-java-vars.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/05-bst-java-vars.pdf)  | 課題1(締切: 11/13) |
-|5   |11/6(水)| 2分探索木 in Java (3), 再帰と繰り返し | [06-rec-iter.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/06-rec-iter.html)/[06-rec-iter.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/06-rec-iter.pdf)  |     | 
+|2   |10/16(水)| 2分探索木 in Java | [02-bst-java.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/02-bst-java.html)/[02-bst-java.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/02-bst-java.pdf) |      |
+|3   |10/21| OCaml の概要 (1) | [03-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/03-ocaml.html)/[03-ocaml.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/03-ocaml.pdf)     |      |
+|4   |10/28| OCaml の概要 (2), 2分探索木 in OCaml (1) | [04-bst-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/04-bst-ocaml.html)/[04-bst-ocaml.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/04-bst-ocaml.pdf)  | 課題1(締切: 11/12) |
+|5   |11/6(水)| OCaml の概要(3), 2分探索木 in OCaml (2) | [06-rec-iter.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/06-rec-iter.html)/[06-rec-iter.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/06-rec-iter.pdf)  |     | 
 |6   |11/11| 続・再帰と繰り返し |      |      |
-|7   |11/18| 短命な2分探索木 in Java and OCaml, モジュールシステム(1) | [05-bst-java-vars.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/05-bst-java-vars.html#mutable-bst), [03-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/03-ocaml.html#quick-intro-ocaml3), [04-bst-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/04-bst-ocaml.html#bstMutable-ocaml), [07-modules.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/07-modules.html)/[07-modules.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/07-modules.pdf)  |      |
+|7   |11/18| モジュールシステム(1) | [05-bst-java-vars.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/05-bst-java-vars.html#mutable-bst), [03-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/03-ocaml.html#quick-intro-ocaml3), [04-bst-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/04-bst-ocaml.html#bstMutable-ocaml), [07-modules.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/07-modules.html)/[07-modules.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/07-modules.pdf)  |      |
 |    |12/2| (休講)  |   |      |
 |8   |12/9| モジュールシステム(2)| |    |
 |9  |12/16| 多相性 | [08-polymorphism.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/08-polymorphism.html)/[08-polymorphism.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/08-polymorphism.pdf) |      |
