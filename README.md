@@ -42,8 +42,8 @@
 |2   |10/16(水)| 2分探索木 in Java | [02-bst-java.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/02-bst-java.html)/[02-bst-java.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/02-bst-java.pdf) |      |
 |3   |10/21| OCaml の概要 (1) | [03-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/03-ocaml.html)/[03-ocaml.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/03-ocaml.pdf)     |      |
 |4   |10/28| OCaml の概要 (2), 2分探索木 in OCaml (1) | [04-bst-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/04-bst-ocaml.html)/[04-bst-ocaml.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/04-bst-ocaml.pdf)  | 課題1(締切: 11/12) |
-|5   |11/6(水)| OCaml の概要(3), 2分探索木 in OCaml (2) | [06-rec-iter.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/06-rec-iter.html)/[06-rec-iter.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/06-rec-iter.pdf)  |     | 
-|6   |11/11| 続・再帰と繰り返し |      |      |
+|5   |11/6(水)| OCaml の概要(3), 短命な2分探索木 in OCaml, C言語 | [05-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/05-C.html)/[05-C.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/05-C.pdf)  |     | 
+|6   |11/11| 2分探索木 in C | [06-bst-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/06-bst-C.html)/[06-bst-C.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/06-bst-C.pdf)  |      |
 |7   |11/18| モジュールシステム(1) | [05-bst-java-vars.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/05-bst-java-vars.html#mutable-bst), [03-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/03-ocaml.html#quick-intro-ocaml3), [04-bst-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/04-bst-ocaml.html#bstMutable-ocaml), [07-modules.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/07-modules.html)/[07-modules.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/07-modules.pdf)  |      |
 |    |12/2| (休講)  |   |      |
 |8   |12/9| モジュールシステム(2)| |    |
