@@ -13,6 +13,7 @@
 
 ## お知らせ
 
+* 11/27(水)5限に補講を行う予定です．(2019.11.15)
 * 課題1が出ました．(2019.10.28)
 * 2019年度ページたちあげ (2019.9.19)
 * BlueJ のデバッガなんて知らん，ということなので[今年の「プログラミング入門」で使った資料](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/tmp/BlueJTool2.pdf)を置きました．(2017.11.06)
@@ -44,7 +45,8 @@
 |4   |10/28| OCaml の概要 (2), 2分探索木 in OCaml (1) | [04-bst-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/04-bst-ocaml.html)/[04-bst-ocaml.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/04-bst-ocaml.pdf)  | 課題1(締切: 11/12) |
 |5   |11/6(水)| OCaml の概要(3), 短命な2分探索木 in OCaml, C言語 | [05-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/05-C.html)/[05-C.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/05-C.pdf)  |     | 
 |6   |11/11| 2分探索木 in C | [06-bst-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/06-bst-C.html)/[06-bst-C.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/06-bst-C.pdf)  |      |
-|7   |11/18| モジュールシステム(1) | [05-bst-java-vars.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/05-bst-java-vars.html#mutable-bst), [03-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/03-ocaml.html#quick-intro-ocaml3), [04-bst-ocaml.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/04-bst-ocaml.html#bstMutable-ocaml), [07-modules.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/07-modules.html)/[07-modules.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/07-modules.pdf)  |      |
+|7   |11/18| プログラミング言語の仕様を読む | [07-language-syntax.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/07-language-syntax.html) |      |
+|8   |11/27(5限)| 再帰と繰り返し | [08-rec-iter.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/08-rec-iter.html) |      |
 |    |12/2| (休講)  |   |      |
 |8   |12/9| モジュールシステム(2)| |    |
 |9  |12/16| 多相性 | [08-polymorphism.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/08-polymorphism.html)/[08-polymorphism.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/08-polymorphism.pdf) |      |
@@ -53,7 +55,7 @@
 |12  |1/14| C言語の概要 | [11-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/11-C.html)/[11-C.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/11-C.pdf) |      |
 |    |1/20| (休講) |  |    |
 |13  |1/?(補講)| 2分探索木 in C | [12-bst-C.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/12-bst-C.html)/[12-bst-C.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/12-bst-C.pdf) |      |
-|14  |1/?(補講)| プログラミング言語の仕様を読む，試験について | [14-language-syntax.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/14-language-syntax.html)    |      |
+|14  |1/?(補講)| 試験について |     |      |
 |    |2/?|試験      |      |      |
 
 講義で紹介するプログラムは(上のファイル一覧にある) src/ 以下で公開するので適宜ダウンロードしてもらいたい．
