@@ -50,7 +50,7 @@
 |    |12/2| (休講)  |   |      |
 |8   |12/9 | 再帰と繰り返し | [08-rec-iter.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/08-rec-iter.html)/[08-rec-iter.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/08-rec-iter.pdf) |      |
 |9   |12/16| 多相性 | [09-polymorphism.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/09-polymorphism.html)/[09-polymorphism.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/09-polymorphism.pdf) |      |
-|10  |12/18(水，5限)補講| 高階関数 | [10-hofuns.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/10-hofuns.html)/[10-hofuns.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/10-hofuns.pdf) |    |
+|10  |12/19(木，5限)補講| 高階関数 | [10-hofuns.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/10-hofuns.html)/[10-hofuns.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/10-hofuns.pdf) |    |
 |11   |12/23| 多相的な2分探索木  | [11-polyBST.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/11-polyBST.html)/[11-polyBST.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/11-polyBST.pdf) |  |
 |12  |1/6|  |      |
 |13  |1/14(火)|  |      |
