@@ -52,7 +52,7 @@
 |9   |12/16| 多相性 | [09-polymorphism.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/09-polymorphism.html)/[09-polymorphism.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/09-polymorphism.pdf) |      |
 |10  |12/19(木，5限)補講| 高階関数 | [10-hofuns.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/10-hofuns.html)/[10-hofuns.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/10-hofuns.pdf) |    |
 |11   |12/23| 多相的な2分探索木  | [11-polyBST.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/11-polyBST.html)/[11-polyBST.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/11-polyBST.pdf) |  |
-|12  |1/6|  |      |
+|12  |1/6| ビジターパターン | [12-visitor-pattern.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/12-visitor-pattern.html)/[12-visitor-parttern.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/12-visitor-pattern.pdf) |  |
 |13  |1/14(火)|  |      |
 |    |1/20| (休講) |  |    |
 |14  |1/?(補講)| 期末試験について | |      |
