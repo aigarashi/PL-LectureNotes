@@ -53,9 +53,8 @@
 |10  |12/19(木，5限)補講| 高階関数 | [10-hofuns.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/10-hofuns.html)/[10-hofuns.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/10-hofuns.pdf) |    |
 |11   |12/23| 多相的な2分探索木  | [11-polyBST.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/11-polyBST.html)/[11-polyBST.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/11-polyBST.pdf) |  |
 |12  |1/6| ビジターパターン | [12-visitor-pattern.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/12-visitor-pattern.html)/[12-visitor-parttern.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/12-visitor-pattern.pdf) |  |
-|13  |1/14(火)|  |      |
+|13  |1/14(火)| モジュール | [13-modules.html](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/13-modules.html)/[13-modules.pdf](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/13-modules.pdf)     |
 |    |1/20| (休講) |  |    |
-|14  |1/?(補講)| 期末試験について | |      |
 |    |2/?|試験      |      |      |
 
 講義で紹介するプログラムは(上のファイル一覧にある) src/ 以下で公開するので適宜ダウンロードしてもらいたい．
