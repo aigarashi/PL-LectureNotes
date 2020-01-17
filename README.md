@@ -13,6 +13,7 @@
 
 ## お知らせ
 
+*  [2016年度試験問題](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/final2016.pdf), [2017年度試験問題](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/final2017.pdf), [2018年度試験問題](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/pl/final2018.pdf)を置きました．(2020.01.17)
 * 12/19(木)5限に補講を行う予定です．(2019.12.15)
 * 11/27(水)5限に補講を行う予定です．(2019.11.15) (追記: 五十嵐の体調不良によりキャンセルになりました．)
 * 課題1が出ました．(2019.10.28)
